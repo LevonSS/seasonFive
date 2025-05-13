@@ -22,7 +22,8 @@
 
       &:hover {
         filter: grayscale(0);
-        scale: 1.05;
+        scale: 1.02;
+        z-index: 10;
       }
       &--1 {
         grid-row: 1 / span 2;
