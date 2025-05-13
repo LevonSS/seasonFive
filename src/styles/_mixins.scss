@@ -1,0 +1,31 @@
+@use "sass:map";
+
+$breakpoints: (
+  phone: 600px,
+  tab: 800px,
+  laptop: 1200px,
+  ultraWide: 1920px,
+);
+
+@mixin respond($breakpoint) {
+  $size: map.get($breakpoints, $breakpoint);
+
+  @if $breakpoint == ultraWide {
+    @media only screen and (min-width: $size) {
+      @content;
+    }
+  } @else if $size {
+    @media only screen and (max-width: $size) {
+      @content;
+    }
+  } @else {
+    @warn "Unknown breakpoint `#{$breakpoint}`";
+  }
+}
+
+@mixin defaultWidth {
+  width: var(--width-large);
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 15rem 0;
+}

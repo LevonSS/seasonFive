@@ -1,0 +1,119 @@
+@use "../../styles/global.scss" as global;
+
+.salmon {
+  display: flex;
+  @include global.defaultWidth;
+  padding: 0 6.39795%;
+  position: relative;
+
+  @include global.respond(phone) {
+    max-width: 100%;
+    padding: 0 2.4rem;
+  }
+
+  &__text {
+    position: absolute;
+    text-align: left;
+    max-width: 75%;
+    top: 50%;
+    transform: translatey(-50%);
+
+    @include global.respond(phone) {
+      position: initial;
+      transform: translatey(0);
+      max-width: 100%;
+    }
+
+    & h3 {
+      font-size: 2.5vw;
+      line-height: 1.2;
+      font-weight: 400;
+      color: black;
+      padding-bottom: 3rem;
+
+      @include global.respond(ultraWide) {
+        font-size: 1.5vw;
+      }
+
+      @include global.respond(phone) {
+        font-size: 2.4rem;
+      }
+
+      & span {
+        display: block;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  &__image {
+    flex: 0 1 50%;
+    margin-left: auto;
+    & img {
+      display: inline-block;
+      width: 100%;
+    }
+
+    @include global.respond(phone) {
+      display: none;
+    }
+  }
+
+  & a:link,
+  & a:visited {
+    text-decoration: none;
+    color: white;
+    padding: 2.4rem 11.2rem 2.4rem 2.4rem;
+  }
+
+  &__btnSalmon {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    background: #1a1a1b;
+    display: inline-block;
+    position: relative;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+
+    @include global.respond(phone) {
+      font-size: 0.9rem;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      height: 10px;
+      width: 10px;
+      border-right: 2px solid white;
+      border-bottom: 2px solid white;
+      right: 2.1rem;
+      top: 50%;
+      margin-top: -5px;
+      transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+    &::before {
+      transform: rotate(-45deg) translate3d(-4px, -4px, 0);
+      opacity: 0;
+    }
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__btnSalmon:hover {
+    color: rgb(206, 206, 206) !important;
+
+    &::before {
+      transform: rotate(-45deg) translateZ(0);
+      opacity: 1;
+    }
+
+    &::after {
+      transform: rotate(-45deg) translate3d(4px, 4px, 0);
+      opacity: 0;
+    }
+  }
+}

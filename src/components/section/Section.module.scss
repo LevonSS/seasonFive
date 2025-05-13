@@ -1,0 +1,147 @@
+@use "../../styles/global.scss" as global;
+
+.sectionBox {
+  &__yellow {
+    background-color: #69ac59;
+    // background-image: url('../../assets/greenhouse.jpg');
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    padding: 30vh 20vw 20vh;
+
+    // & h1 {
+    //   padding-bottom: 3rem;
+    // }
+
+    @include global.respond(tab) {
+      padding: 28vh 20vw 20vh;
+    }
+
+    @include global.respond(phone) {
+      padding: 16rem 5vw;
+    }
+  }
+  h1 {
+    font-size: 3.5vw;
+    padding-bottom: 3rem;
+    line-height: 1.2;
+    font-weight: 400;
+    text-align: center;
+
+    @include global.respond(phone) {
+      font-size: 2.4rem;
+    }
+
+    span {
+      display: inline-block;
+      width: 94%;
+      letter-spacing: -3px;
+
+      @include global.respond(tab) {
+        letter-spacing: 0;
+      }
+    }
+  }
+  & p {
+    font-size: var(--middle-font-size);
+    padding-bottom: 1rem;
+  }
+
+  & ul {
+    font-size: var(--middle-font-size);
+    padding-left: var(--middle-font-size);
+  }
+
+  &__white {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    @include global.defaultWidth;
+    background-color: transparent;
+    padding: 0 6.39795%;
+    margin-top: -10vh;
+    padding-bottom: 18rem;
+
+    & > div {
+      flex: 0 1 50%;
+    }
+    &--about {
+      & > div {
+        flex: 1 1 auto;
+      }
+    }
+    & p {
+      font-size: var(--middle-font-size);
+      padding: 0.5rem 0;
+    }
+
+    & h4 {
+      font-size: var(--middle-font-size);
+      padding: 2rem 0;
+    }
+
+    &--mp0 {
+      margin-top: 0;
+      padding: 0 2rem;
+      display: block;
+    }
+
+    @include global.respond(phone) {
+      flex-direction: column;
+      gap: 5rem;
+      max-width: 100%;
+      padding: 0 2.4rem 4.5rem;
+    }
+  }
+
+  &__salmon {
+    background-color: #cbe7b5;
+    padding: 18rem 0;
+    @include global.respond(tab) {
+      padding: 6rem 0;
+    }
+  }
+
+  &__blue {
+    background-color: #9bcda1;
+    padding: 38vh 20vw 20vh;
+
+    @include global.respond(tab) {
+      padding: 28vh 20vw 20vh;
+    }
+
+    @include global.respond(phone) {
+      padding: 16rem 5vw;
+    }
+  }
+
+  &__terakot {
+    background-color: #e37554;
+    padding: 38vh 20vw 20vh;
+
+    @include global.respond(tab) {
+      padding: 28vh 20vw 20vh;
+    }
+
+    @include global.respond(phone) {
+      padding: 16rem 5vw;
+    }
+  }
+
+  &.aranet {
+    background-image: url(../../assets/images/AranetBackground.jpg);
+    background-size: cover;
+    padding: 30vh 20vw 20vh;
+  }
+
+  &__banner {
+    padding: 18rem 0;
+
+    @include global.respond(tab) {
+      padding: 9.6rem 0;
+    }
+
+    @include global.respond(phone) {
+      padding: 4.8rem 2.4rem;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+@use "../../styles/global.scss" as global;
+
+.capsule {
+  // background-image: url('../../assets/images/project1.jpg');
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  a:link,
+  a:visited {
+    text-decoration: none;
+    font-weight: 400;
+    color: inherit;
+  }
+  .imgBox {
+    display: initial;
+    width: initial;
+    height: initial;
+    overflow: hidden;
+  }
+  &.home {
+    .imgBox {
+      display: flex;
+      width: 500px;
+      height: 675px;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .img{
+      display: block;
+      scale: 0.55;
+      width: initial;
+      transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  .img {
+    display: block;
+    width: 100%;
+    scale: initial;
+    transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &__text {
+    text-align: center;
+    & h3 {
+      position: relative;
+      z-index: 1;
+      font-weight: 400;
+      font-size: 4.8rem;
+
+      @include global.respond(laptop) {
+        font-size: 3.8rem;
+      }
+
+      @include global.respond(tab) {
+        font-size: 5vw;
+        margin-top: -2.5rem;
+      }
+
+      @include global.respond(phone) {
+        font-size: 2.4rem;
+        margin-top: -1.5rem;
+      }
+    }
+    & span {
+      font-size: 1.7rem;
+      border-bottom: 1px solid #eac85e;
+
+      @include global.respond(tab) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

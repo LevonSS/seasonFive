@@ -1,0 +1,70 @@
+@use "../../styles/global.scss" as global;
+
+.container {
+  @include global.defaultWidth;
+
+  padding: 14.6rem 10vw;
+  text-align: center;
+  background: #f1f2f2;
+
+  @include global.respond(tab) {
+    padding: 8.6rem 10vw;
+  }
+
+  @include global.respond(phone) {
+    max-width: 100%;
+    padding: 6rem 10vw;
+  }
+
+  &__eyebrow {
+    & h6 {
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: #eac85e;
+    }
+  }
+
+  &__title {
+    font-size: 2.5vw;
+    @include global.respond(ultraWide) {
+      font-size: 1vw;
+    }
+    & h3 {
+      margin-top: 1.8rem;
+      font-weight: 400;
+      line-height: 1.2;
+
+      @include global.respond(tab) {
+        margin-top: 1rem;
+      }
+    }
+    @include global.respond(tab) {
+      font-size: 3.8vw;
+    }
+
+    @include global.respond(phone) {
+      font-size: 2.1rem;
+    }
+  }
+  &__link {
+    margin-top: 3.6rem;
+    font-size: 1.7rem;
+    line-height: 2;
+
+    @include global.respond(tab) {
+      margin-top: 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    & span {
+      border-bottom: 1px solid #eac85e;
+      transition: all 0.3s;
+      cursor: pointer;
+    }
+
+    & span:hover {
+      border-bottom: 1px solid transparent;
+    }
+  }
+}

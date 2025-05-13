@@ -1,0 +1,229 @@
+@use "../../../styles/global.scss" as global;
+
+@mixin burgerMenuContainer {
+  position: absolute;
+  top: 5rem;
+  right: 0;
+  display: flex;
+  height: 3rem;
+  width: 3.4rem;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 10;
+}
+
+@mixin burgerMenu {
+  border-radius: 1rem;
+  background-color: #6e6e6e;
+  width: 3.4rem;
+  height: 2px;
+}
+
+.nav__overlay {
+  position: fixed;
+  height: 100vh;
+  width: 144vw;
+  top: 0;
+  left: -44vw;
+  background-color: rgba(115, 153, 47, 0.8);
+  // background-color: #69ac59;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s;
+  @include global.respond(tab) {
+    display: none;
+  }
+}
+
+.nav {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+  transition: transform 0.2s ease-in;
+  transform: translateX(0);
+  padding-top: 2.4rem;
+  z-index: 5;
+
+  @include global.respond(tab) {
+    width: calc(100vw - 54px - 5%);
+    max-width: 44rem;
+    padding-top: 0;
+    background-color: black;
+    justify-content: flex-end;
+    height: 100vh;
+    transform: translateX(100%);
+  }
+
+  &--showMobileMenu {
+    transform: translateX(0);
+  }
+
+  &__mobileMenu {
+    @include burgerMenuContainer();
+
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s ease-in;
+
+    & span {
+      position: relative;
+      display: inline-block;
+      @include burgerMenu();
+    }
+
+    & span::before,
+    & span::after {
+      content: "";
+      position: absolute;
+      @include burgerMenu();
+    }
+
+    & span::before {
+      top: -0.8rem;
+      left: 0;
+    }
+    & span::after {
+      top: 0.8rem;
+      left: 0;
+    }
+
+    @include global.respond(tab) {
+      visibility: visible;
+      opacity: 1;
+      top: 2.5rem;
+      right: 100%;
+      margin-right: 10%;
+    }
+
+    @include global.respond(phone) {
+      margin-right: 5%;
+    }
+  }
+
+  &--hidden {
+    .nav__mobileMenu {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .headermenu {
+      visibility: hidden;
+      opacity: 0;
+    }
+
+    &:hover > .nav__mobileMenu {
+      visibility: hidden;
+      opacity: 0;
+    }
+
+    &:hover > .headermenu {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    &:hover + .nav__overlay {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    @include global.respond(tab) {
+      &:hover > .nav__mobileMenu {
+        visibility: visible;
+        opacity: 1;
+      }
+      .headermenu {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.nav a:link,
+.nav a:visited {
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.nav a:global(.active) {
+  color: var(--color-grey);
+  @include global.respond(tab) {
+    color: white;
+  }
+  &:after {
+    opacity: 1;
+    background-color: currentColor;
+    transform: translateY(1.4rem);
+  }
+}
+
+.headermenu {
+  list-style: none;
+  display: flex;
+  gap: 3.6rem;
+  justify-content: flex-end;
+  align-self: stretch;
+  align-items: center;
+  transition: transform 0.2s ease-in, opacity 0.2s ease-in;
+
+  @include global.respond(laptop) {
+    gap: 2.5rem;
+  }
+
+  @include global.respond(tab) {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1.6rem;
+    padding: 2.4rem 2.4rem 0 0;
+    align-self: flex-start;
+    text-align: end;
+    width: 44rem;
+    max-width: 44rem;
+  }
+
+  &__item {
+    cursor: pointer;
+    position: relative;
+    font-size: var(--middle-font-size);
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    color: #1a1a1b;
+    transition: all 0.2s;
+
+    @include global.respond(laptop) {
+      font-size: 2rem;
+    }
+
+    @include global.respond(tab) {
+      color: white;
+      font-size: var(--middle-font-size);
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: currentColor;
+      transform: translateY(0.8rem);
+      left: 0;
+      opacity: 0;
+      transition: all 0.2s;
+    }
+  }
+  &__item:hover {
+    color: #6d6b6b;
+
+    @include global.respond(tab) {
+      color: white;
+    }
+
+    &:after {
+      opacity: 1;
+      transform: translateY(1.4rem);
+    }
+  }
+}

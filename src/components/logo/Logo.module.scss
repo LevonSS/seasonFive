@@ -1,0 +1,25 @@
+@use "../../styles/global.scss" as global;
+
+.logoBox {
+  transition: transform 0.2s ease-in;
+  z-index: 5;
+
+  @include global.respond(tab) {
+    flex: 1 1 100%;
+  }
+  &--showMobileMenu {
+    transform: translateX(-100%);
+  }
+
+  &__logo {
+    display: block;
+    width: 9.2rem;
+
+    @include global.respond(tab) {
+      width: 6.4rem;
+    }
+  }
+  &__logofooter {
+    width: 30rem;
+  }
+}
