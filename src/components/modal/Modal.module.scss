@@ -1,3 +1,5 @@
+@use "../../styles/global.scss" as global;
+
 .modalContainer {
   position: fixed;
   inset: 0;
@@ -24,6 +26,9 @@
 
     & > * {
       padding: 1rem;
+      @include global.respond(phone) {
+        padding: 0;
+      }
     }
 
     & button {

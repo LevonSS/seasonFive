@@ -1,4 +1,3 @@
-import { Suspense } from "react";
 import Banner from "../components/banner/Banner";
 import Gallery from "../components/gallery/Gallery";
 import Section from "../components/section/Section";
@@ -6,17 +5,15 @@ import Section from "../components/section/Section";
 const Projects = () => {
   return (
     <>
-      <Section color="sectionBox__blue">
+      <Section type="sectionBox__blue">
         <h1>
           <span>Projects</span>
         </h1>
       </Section>
-      <Section color="sectionBox__banner">
-        <Suspense fallback={<p>Loading...</p>}>
-          <Gallery />
-        </Suspense>
+      <Section type="sectionBox__gallery">
+        <Gallery />
       </Section>
-      <Section color="sectionBox__white" modifier="sectionBox__white--mp0">
+      <Section type="sectionBox__white" modifier="sectionBox__white--mt0">
         <p>
           In this day and age everyone has access to the same information &
           listings. Distribution is no longer a major value component that a
@@ -43,7 +40,7 @@ const Projects = () => {
           in the Chicagoland area.
         </p>
       </Section>
-      <Section color="sectionBox__banner">
+      <Section type="sectionBox__banner">
         <Banner text="Each project is a step toward a smarter future in horticulture." />
       </Section>
     </>

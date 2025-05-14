@@ -5,7 +5,7 @@ import Section from "../components/section/Section";
 const About = () => {
   return (
     <>
-      <Section color="sectionBox__blue">
+      <Section type="sectionBox__blue">
         <h1>
           <span>
             At Season5, we don’t just install equipment — we build climate
@@ -13,10 +13,10 @@ const About = () => {
           </span>
         </h1>
       </Section>
-      <Section color="sectionBox__white" modifier="sectionBox__white--about">
+      <Section type="sectionBox__white" modifier="sectionBox__white--about">
         <Capsule image="bre-final-office.jpg" />
       </Section>
-      <Section color="sectionBox__white" modifier="sectionBox__white--mp0">
+      <Section type="sectionBox__white" modifier="sectionBox__white--mt0">
         <p>
           Our approach is based on the Plant Empowerment (GPE) philosophy:
           balancing energy, water, and CO₂ for stronger, healthier crops. By
@@ -51,7 +51,7 @@ const About = () => {
           plants thrive, growers succeed, and data drives every decision.
         </p>
       </Section>
-      <Section color="sectionBox__banner">
+      <Section type="sectionBox__banner">
         <Banner text="Let’s design the future of your greenhouse together" />
       </Section>
       {/* <div>

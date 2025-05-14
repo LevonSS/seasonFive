@@ -24,9 +24,20 @@
       justify-content: center;
       align-items: center;
       overflow: hidden;
+
+      @include global.respond(laptop) {
+        width: 450px;
+        height: 625px;
+      }
+
+      @include global.respond(md) {
+        width: 350px;
+        height: 525px;
+        margin: auto;
+      }
     }
 
-    .img{
+    .img {
       display: block;
       scale: 0.55;
       width: initial;
@@ -61,12 +72,10 @@
 
       @include global.respond(tab) {
         font-size: 5vw;
-        margin-top: -2.5rem;
       }
 
       @include global.respond(phone) {
         font-size: 2.4rem;
-        margin-top: -1.5rem;
       }
     }
     & span {

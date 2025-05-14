@@ -1,6 +1,8 @@
+@use "../../styles/global.scss" as global;
+
 .container {
   display: grid;
-  grid-template-rows: 10vh min-content 40vw repeat(3, min-content);
+  grid-template-rows: min-content;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
   .gallery {
@@ -11,6 +13,19 @@
     grid-gap: 1.5rem;
     padding: 1.5rem 10%;
 
+    @include global.respond(laptop) {
+      padding: 1.5rem 4%;
+      grid-gap: 1rem;
+    }
+
+    @include global.respond(tab) {
+      grid-gap: 0.5rem;
+    }
+
+    @include global.respond(tab) {
+      padding: 0rem 4%;
+    }
+
     .item {
       filter: grayscale(1);
       transition: all 0.3s ease;
@@ -19,6 +34,7 @@
       will-change: filter; /* hints browser to optimize */
       image-rendering: auto;
       -webkit-transform: translate3d(0, 0, 0); /* for Safari/Chrome */
+      cursor: pointer;
 
       &:hover {
         filter: grayscale(0);

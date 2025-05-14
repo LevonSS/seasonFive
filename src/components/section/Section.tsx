@@ -4,15 +4,15 @@ import FadeInSection from "../../animation/animation";
 
 interface Props {
   children: ReactNode;
-  color?: string;
+  type?: string;
   modifier?: string;
 }
 
-const Section = ({ children, color, modifier }: Props) => {
+const Section = ({ children, type, modifier }: Props) => {
   return (
     <FadeInSection>
       <section
-        className={`${styles["sectionBox"]} ${color ? styles[color] : ""} ${
+        className={`${styles["sectionBox"]} ${type ? styles[type] : ""} ${
           modifier ? styles[modifier] : ""
         }`}
       >

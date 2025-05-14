@@ -8,10 +8,10 @@ import Section from "../components/section/Section";
 const SectionContainer = () => {
   return (
     <>
-      <Section color="sectionBox__yellow">
+      <Section type="sectionBox__yellow">
         <HomePageHeadline />
       </Section>
-      <Section color="sectionBox__white">
+      <Section type="sectionBox__white">
         <FadeInSection>
           <Capsule
             modifier="home"
@@ -32,14 +32,13 @@ const SectionContainer = () => {
         </FadeInSection>
       </Section>
 
-      <Section color="sectionBox__salmon">
+      <Section type="sectionBox__salmon">
         <Salmon />
       </Section>
 
-      <Section color="sectionBox__banner">
+      <Section type="sectionBox__banner">
         <Banner text="Contact us for a free consultation — and let’s map out your path to better growing conditions and lower energy costs." />
       </Section>
-      
     </>
   );
 };

@@ -9,7 +9,7 @@ interface Props {
 const Packages = ({ children, headline }: Props) => {
   return (
     <>
-      <Section color="aranet">
+      <Section type="aranet">
         <h1>{headline}</h1>
       </Section>
       {children}
