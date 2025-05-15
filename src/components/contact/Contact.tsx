@@ -3,6 +3,7 @@ import { useOutsideClick } from "../../hooks/useOutsideClick";
 import FadeInSectionVariants from "../../animation/animation";
 import { motion } from "framer-motion";
 import { containerVariants, yOffsetVariants } from "../../variants";
+import { useAmoForm } from "../../context/useAmoForm";
 
 export type ContactToggleProps = {
   onContactClose: (param?: string) => void;
@@ -10,6 +11,8 @@ export type ContactToggleProps = {
 };
 
 const Contact = ({ isOpenContact, onContactClose }: ContactToggleProps) => {
+  const { setIsOpenModal } = useAmoForm();
+
   const ref = useOutsideClick({
     handleToggleContact: () => onContactClose("close"),
   });
@@ -34,8 +37,7 @@ const Contact = ({ isOpenContact, onContactClose }: ContactToggleProps) => {
         <motion.div variants={yOffsetVariants}>
           <div className={styles.contact__contactgroup}>
             <h6>Phone</h6>
-            <p>
-              (+374) 60 615151</p>
+            <p>(+374) 60 615151</p>
           </div>
         </motion.div>
         <motion.div variants={yOffsetVariants}>
@@ -44,12 +46,11 @@ const Contact = ({ isOpenContact, onContactClose }: ContactToggleProps) => {
             <p>info@season5.am</p>
           </div>
         </motion.div>
-        {/* <motion.div variants={yOffsetVariants}>
+        <motion.div variants={yOffsetVariants}>
           <div className={styles.contact__contactgroup}>
-            <h6>Visit</h6>
-            <p>Nor Norqi, 4-rd zangvac, Yerevan, Armenia</p>
+            <button onClick={() => setIsOpenModal(true)}>Let’s Connect</button>
           </div>
-        </motion.div> */}
+        </motion.div>
       </FadeInSectionVariants>
     </div>
   );

@@ -28,6 +28,25 @@
       color: #eac85e;
       text-transform: uppercase;
     }
+    button {
+      background-color: #00c2ff;
+      color: #ffffff;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      &:hover {
+        background-color: #00a6db;
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+      }
+      &:focus {
+        transform: translateY(-1px);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+      }
+    }
   }
   &::-webkit-scrollbar {
     display: none;
