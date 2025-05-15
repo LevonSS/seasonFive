@@ -21,7 +21,7 @@ const CardItem = ({
 }: CardProps) => {
   return (
     <div className={styles.cardItem}>
-      <FadeInSection duration={0.5}>
+      <FadeInSection duration={0.5} y={200}>
         <Link to={`/${link}/${id}`}>
           <div className={styles.cardItem__title}>
             <h3>{title}</h3>

@@ -14,10 +14,12 @@ interface Info {
 
 const Gallery = () => {
   const [openModal, setOpenModal] = useState(false);
+  const [isActive, setisActive] = useState(false);
   const [projectinfo, setProjectInfo] = useState<Info>({ text: "", image: "" });
 
   const handleClick = (info: Info) => {
     setOpenModal(true);
+    setTimeout(() => setisActive(true), 0);
     setProjectInfo(info);
   };
 
@@ -44,6 +46,8 @@ const Gallery = () => {
           {openModal &&
             createPortal(
               <Modal
+                isActive={isActive}
+                setisActive={setisActive}
                 setOpenModal={setOpenModal}
                 text="Text Text"
                 image={`${_GALLERYPATH + projectinfo.image}`}

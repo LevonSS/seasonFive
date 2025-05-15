@@ -4,12 +4,20 @@ import styles from "./Modal.module.scss";
 interface Props {
   text: string;
   image: string;
+  isActive: boolean;
+  setisActive: (value: boolean) => void;
   setOpenModal: (value: boolean) => void;
 }
 
-const Modal = ({ text, image, setOpenModal }: Props) => {
+const Modal = ({ text, image, setOpenModal, setisActive, isActive }: Props) => {
+  const handleModalClose = () => {
+    setisActive(false);
+    setOpenModal(false);
+  };
   return (
-    <div className={`${styles.container} `}>
+    <div
+      className={`${styles.container}  ${isActive ? styles["isActive"] : ""}`}
+    >
       <div className={styles.modal}>
         <h3 className={styles.title}>Project</h3>
         <Suspense fallback={<p>Loading...</p>}>
@@ -18,9 +26,9 @@ const Modal = ({ text, image, setOpenModal }: Props) => {
           </figure>
         </Suspense>
         <div className={styles.text}>{text}</div>
-        <button onClick={() => setOpenModal(false)}>Close</button>
+        <button onClick={handleModalClose}>Close</button>
       </div>
-      <div className={styles.overlay} onClick={() => setOpenModal(false)}></div>
+      <div className={styles.overlay} onClick={handleModalClose}></div>
     </div>
   );
 };
