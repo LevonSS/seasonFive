@@ -1282,7 +1282,7 @@ export const serviceTypes = [
       "Tailored solutions that maximize heat efficiency while reducing energy bills.",
     ],
     properties: [
-      "Hot water and steam heating systems",
+      "Hot water and air heating systems",
       "Infrared and radiant heaters",
       "Condensing boilers and heat recovery systems",
     ],
@@ -1292,7 +1292,7 @@ export const serviceTypes = [
     image: "cooling.png",
     text: [
       "Struggling with overheating or poor airflow? We offer:",
-      "iClimate stability = stronger plants and fewer diseases.",
+      "Climate stability = stronger plants and fewer diseases.",
     ],
     properties: [
       "Evaporative cooling and fog systems",
