@@ -16,11 +16,23 @@
   &:hover {
     background-color: #66bb6a;
   }
+  &:focus {
+    outline: 3px solid #a8d5a3;
+    outline-offset: 2px;
+  }
   & svg {
     transition: transform 0.3s ease;
   }
 
   &:hover svg {
     transform: scale(1.2);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .scrollTopButton svg {
+    transition: none !important;
+  }
+  .scrollTopButton:hover svg {
+    transform: none !important;
   }
 }
