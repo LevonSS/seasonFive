@@ -6,6 +6,7 @@ import {
   containerVariants,
 } from "../../variants";
 import Button from "../button/Button";
+import ScrollToTop from "../scrollToTop/ScrollToTop";
 import styles from "./ItemPage.module.scss";
 import { motion } from "framer-motion";
 
@@ -25,14 +26,11 @@ export interface ItemProps {
   };
 }
 
-const ItemPage = ({
-  item: { id, image, information, price, title },
-}: ItemProps) => {
-  console.log(id, image, information, price, title);
-
+const ItemPage = ({ item: { image, information, title } }: ItemProps) => {
   return (
     <>
       <FadeInSectionVariants variants={containerVariants}>
+        <ScrollToTop />
         <div className={styles.itemPage}>
           <div className={styles.itemPage__image}>
             <motion.div variants={yOffsetVariants}>

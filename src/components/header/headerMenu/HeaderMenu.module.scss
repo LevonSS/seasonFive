@@ -166,10 +166,14 @@
   justify-content: flex-end;
   align-self: stretch;
   align-items: center;
-  transition: transform 0.2s ease-in, opacity 0.2s ease-in;
+  transition: transform 0.2s ease-in, opacity 0.2s ease-in, gap 0.2s;
 
   @include global.respond(laptop) {
     gap: 2.5rem;
+  }
+
+  @include global.respond(md) {
+    gap: 1.5rem;
   }
 
   @include global.respond(tab) {
