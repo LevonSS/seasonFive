@@ -12,6 +12,7 @@ import PageNotFound from "./pages/PageNotFound";
 import ProductsItem from "./pages/ProductsItem";
 import Projects from "./pages/Projects";
 import Services from "./pages/Services";
+import ScrollToTopButton from "./components/scrollTopButton/ScrollTopButton";
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
+      <ScrollToTopButton />
     </AmoFormProvider>
   );
 }

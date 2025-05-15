@@ -48,7 +48,7 @@ export function FadeInSection({
   duration = 0.6,
   delay = 0,
   viewport = true,
-  y = 300,
+  y = 250,
 }: FadeInSectionProps) {
   return (
     <motion.div

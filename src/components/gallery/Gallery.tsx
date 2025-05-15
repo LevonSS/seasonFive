@@ -24,7 +24,7 @@ const Gallery = () => {
   };
 
   return (
-    <FadeInSection delay={0.3}>
+    <FadeInSection delay={0.3} y={200}>
       <div className={styles.container}>
         <div className={styles.gallery}>
           {projectsImage.map((item, index) => {
