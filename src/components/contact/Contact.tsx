@@ -1,8 +1,8 @@
 import styles from "./Contact.module.scss";
 import { useOutsideClick } from "../../hooks/useOutsideClick";
-import FadeInSectionVariants from "../../animation/animation";
-import { motion } from "framer-motion";
-import { containerVariants, yOffsetVariants } from "../../variants";
+import { FadeInSection } from "../../animation/animation";
+// import { motion } from "framer-motion";
+// import { containerVariants, yOffsetVariants } from "../../variants";
 import { useAmoForm } from "../../context/useAmoForm";
 
 export type ContactToggleProps = {
@@ -28,7 +28,35 @@ const Contact = ({ isOpenContact, onContactClose }: ContactToggleProps) => {
         className={styles.contact__close}
         onClick={() => onContactClose("close")}
       ></div>
-      <FadeInSectionVariants variants={containerVariants} viewport={false}>
+      <FadeInSection delay={0.1} y={100} viewport={false}>
+        <div className={styles.contact__title}>
+          <h5>Get in touch today.</h5>
+        </div>
+      </FadeInSection>
+      <FadeInSection delay={0.2} y={100} viewport={false}>
+        <div className={styles.contact__contactgroup}>
+          <h6>Phone</h6>
+          <p>(+374) 60 615151</p>
+        </div>
+      </FadeInSection>
+      <FadeInSection delay={0.3} y={100} viewport={false}>
+        <div className={styles.contact__contactgroup}>
+          <h6>Email</h6>
+          <p>info@season5.am</p>
+        </div>
+      </FadeInSection>
+      <FadeInSection delay={0.4} y={100} viewport={false}>
+        <div className={styles.contact__contactgroup}>
+          <button onClick={() => setIsOpenModal(true)}>Let’s Connect</button>
+        </div>
+      </FadeInSection>
+    </div>
+  );
+};
+
+export default Contact;
+{
+  /* <FadeInSectionVariants variants={containerVariants} viewport={false}>
         <motion.div variants={yOffsetVariants}>
           <div className={styles.contact__title}>
             <h5>Get in touch today.</h5>
@@ -51,9 +79,5 @@ const Contact = ({ isOpenContact, onContactClose }: ContactToggleProps) => {
             <button onClick={() => setIsOpenModal(true)}>Let’s Connect</button>
           </div>
         </motion.div>
-      </FadeInSectionVariants>
-    </div>
-  );
-};
-
-export default Contact;
+      </FadeInSectionVariants> */
+}

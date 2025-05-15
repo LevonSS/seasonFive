@@ -14,6 +14,8 @@ interface FadeInSectionProps {
   children: ReactNode;
   delay?: number;
   duration?: number;
+  y?: number;
+  viewport?: boolean;
 }
 
 export default function FadeInSectionVariants({
@@ -45,13 +47,15 @@ export function FadeInSection({
   children,
   duration = 0.6,
   delay = 0,
+  viewport = true,
+  y = 300,
 }: FadeInSectionProps) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 300 }}
+      initial={{ opacity: 0, y }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: duration, delay }}
-      viewport={{ once: true }}
+      viewport={{ once: viewport }}
     >
       {children}
     </motion.div>
