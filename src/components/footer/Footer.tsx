@@ -14,10 +14,13 @@ const Footer = () => {
           <Link to="https://www.facebook.com/season5.am/" target="_blank">
             <BsFacebook />
           </Link>
-          <Link to="https://www.linkedin.com/company/season-5-llc/" target="_blank">
+          <Link
+            to="https://www.linkedin.com/company/season-5-llc/"
+            target="_blank"
+          >
             <BiLogoLinkedin />
           </Link>
-          <Link to="https://www.instagram.com/" target="_blank">
+          <Link to="https://www.instagram.com/season5.am/" target="_blank">
             <BsInstagram />
           </Link>
         </div>
