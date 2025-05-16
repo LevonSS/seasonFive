@@ -16,7 +16,11 @@ const About = () => {
       <Section type="sectionBox__white" modifier="sectionBox__white--about">
         <Capsule image="bre-final-office.jpg" />
       </Section>
-      <Section type="sectionBox__white" modifier="sectionBox__white--mt0">
+      <Section
+        type="sectionBox__white"
+        modifier="sectionBox__white--mt0"
+        yOffset={200}
+      >
         <p>
           Our approach is based on the Plant Empowerment (GPE) philosophy:
           balancing energy, water, and CO₂ for stronger, healthier crops. By
@@ -54,9 +58,6 @@ const About = () => {
       <Section type="sectionBox__banner">
         <Banner text="Let’s design the future of your greenhouse together" />
       </Section>
-      {/* <div>
-      <script>!function(a,m,o,c,r,m){a[o+c]=a[o+c]{setMeta:function(p){this.params=(this.params[]).concat([p])}},a[o+r]=a[o+r]function(f){a[o+r].f=(a[o+r].f[]).concat([f])},a[o+r]({id:"1503442",hash:"8bf67c583a4281883e3e8968af22607a",locale:"ru"}),a[o+m]=a[o+m]function(f,k){a[o+m].f=(a[o+m].f[]).concat([[f,k]])}}(window,0,"amo_forms_","params","load","loaded");</script><script id="amoforms_script_1503442" async="async" charset="utf-8" src="https://forms.amocrm.ru/forms/assets/js/amoforms.js?1746892119"></script>
-      </div> */}
     </>
   );
 };

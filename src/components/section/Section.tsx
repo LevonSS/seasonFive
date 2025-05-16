@@ -1,16 +1,17 @@
 import { ReactNode } from "react";
 import styles from "./Section.module.scss";
-import FadeInSection from "../../animation/animation";
+import { FadeInSection } from "../../animation/animation";
 
 interface Props {
   children: ReactNode;
   type?: string;
   modifier?: string;
+  yOffset?: number;
 }
 
-const Section = ({ children, type, modifier }: Props) => {
+const Section = ({ children, type, modifier, yOffset = 50 }: Props) => {
   return (
-    <FadeInSection>
+    <FadeInSection y={yOffset}>
       <section
         className={`${styles["sectionBox"]} ${type ? styles[type] : ""} ${
           modifier ? styles[modifier] : ""

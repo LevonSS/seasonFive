@@ -21,7 +21,11 @@ const Projects = () => {
       <Section type="sectionBox__gallery">
         <Gallery />
       </Section>
-      <Section type="sectionBox__white" modifier="sectionBox__white--mt0">
+      <Section
+        type="sectionBox__white"
+        modifier="sectionBox__white--mt0"
+        yOffset={200}
+      >
         <p>
           We help growers upgrade their greenhouses to the next level - smarter,
           more efficient, and fully tailored to their needs. We’re proud of
