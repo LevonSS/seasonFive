@@ -1,4 +1,4 @@
-import { NavLink } from "react-router";
+import { NavLink, useLocation } from "react-router";
 import styles from "./HeaderMenu.module.scss";
 
 interface Props {
@@ -14,6 +14,9 @@ const HeaderMenu = ({
   onContactOpen,
   onShowMobileMenu,
 }: Props) => {
+  const { pathname } = useLocation();
+  console.log("params ", pathname);
+
   return (
     <>
       <nav
@@ -29,23 +32,27 @@ const HeaderMenu = ({
         >
           <span>&nbsp;</span>
         </div>
-        <ul className={styles.headermenu}>
+        <ul
+          className={`${styles.headermenu} ${
+            pathname === "/season" ? styles["white"] : ""
+          }`}
+        >
           <NavLink
-            className={styles.headermenu__item}
+            className={styles.item}
             to="/about"
             onClick={() => onShowMobileMenu(() => false)}
           >
             About
           </NavLink>
           <NavLink
-            className={styles.headermenu__item}
+            className={styles.item}
             to="/services"
             onClick={() => onShowMobileMenu(() => false)}
           >
             Our Services
           </NavLink>
           <NavLink
-            className={styles.headermenu__item}
+            className={styles.item}
             to="/projects"
             onClick={() => onShowMobileMenu(() => false)}
           >
@@ -53,7 +60,7 @@ const HeaderMenu = ({
           </NavLink>
           <NavLink
             title="Aranet Wireless Sensors"
-            className={styles.headermenu__item}
+            className={styles.item}
             to="/packages"
             onClick={() => onShowMobileMenu(() => false)}
           >
@@ -61,7 +68,7 @@ const HeaderMenu = ({
           </NavLink>
           <NavLink
             title="Season5 Climate Computer"
-            className={styles.headermenu__item}
+            className={styles.item}
             to="/season"
             onClick={() => onShowMobileMenu(() => false)}
           >
@@ -69,14 +76,14 @@ const HeaderMenu = ({
           </NavLink>
           <NavLink
             title="Season5 Climate Computer"
-            className={styles.headermenu__item}
+            className={styles.item}
             to="/blog"
             onClick={() => onShowMobileMenu(() => false)}
           >
             Blog
           </NavLink>
           <a
-            className={styles.headermenu__item}
+            className={styles.item}
             onClick={() => {
               onContactOpen();
             }}

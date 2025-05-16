@@ -28,7 +28,10 @@ function App() {
             <Route
               path="season"
               element={
-                <Packages headline="Season5 Climate Controllers">
+                <Packages
+                  headline="Season5 Climate Controllers"
+                  type="seasonFive"
+                >
                   <PackagesAndKits />
                 </Packages>
               }
@@ -36,7 +39,7 @@ function App() {
             <Route
               path="packages"
               element={
-                <Packages headline="Aranet Packages and Kits">
+                <Packages headline="Aranet Packages and Kits" type="aranet">
                   <PackagesAndKits />
                 </Packages>
               }

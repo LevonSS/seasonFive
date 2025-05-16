@@ -6,7 +6,7 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
   .gallery {
-    background-color: #fafafa;
+    background-color: var(--background-color-white);
     grid-column: full-start / full-end;
     display: grid;
     grid-template: repeat(7, 5vw) / repeat(8, 1fr);

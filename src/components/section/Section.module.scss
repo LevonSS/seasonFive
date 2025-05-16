@@ -3,14 +3,7 @@
 .sectionBox {
   &__yellow {
     background-color: #69ac59;
-    // background-image: url('../../assets/greenhouse.jpg');
-    // background-size: cover;
-    // background-repeat: no-repeat;
     padding: 30vh 20vw 20vh;
-
-    // & h1 {
-    //   padding-bottom: 3rem;
-    // }
 
     @include global.respond(md) {
       padding: 28vh 10vw 20vh;
@@ -155,6 +148,15 @@
     background-image: url(../../assets/images/AranetBackground.jpg);
     background-size: cover;
     padding: 30vh 20vw 20vh;
+  }
+
+  &.seasonFive {
+    background-image: url(../../assets/images/SeasonFive.jpg);
+    background-size: cover;
+    padding: 30vh 20vw 20vh;
+    h1 {
+      color: var(--background-color-white);
+    }
   }
 
   &__banner {

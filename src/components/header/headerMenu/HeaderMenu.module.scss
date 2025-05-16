@@ -187,7 +187,13 @@
     max-width: 44rem;
   }
 
-  &__item {
+  &.white {
+    & .item {
+      color: var(--background-color-white);
+    }
+  }
+
+  & .item {
     cursor: pointer;
     position: relative;
     font-size: var(--middle-font-size);
@@ -218,7 +224,7 @@
       transition: all 0.2s;
     }
   }
-  &__item:hover {
+  & .item:hover {
     color: #6d6b6b;
 
     @include global.respond(tab) {
