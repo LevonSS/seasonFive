@@ -1356,7 +1356,7 @@ export const projectsImage = [
   {
     image: "image3.webp",
     title: "0.1 ha Rose Nursery",
-    text: "0.1 ha Rose Nursery Voskevaz | Heating & cooling system with condensing boilers, Season5 climate computer",
+    text: "Voskevaz | Heating & cooling system with condensing boilers, Season5 climate computer",
   },
   {
     image: "image4.webp",
