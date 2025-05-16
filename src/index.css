@@ -83,7 +83,8 @@ body {
 @media (prefers-color-scheme: dark) {
   :root {
     color: var(--background-color-white);
-    background-color: #213547;
+    background-color: var(--background-color-white);
+    /* background-color: #213547; */
   }
   a:hover {
     color: #747bff;
