@@ -28,7 +28,7 @@
       font-size: 2.5vw;
       line-height: 1.2;
       font-weight: 400;
-      color: black;
+      color: var(--background-color);
       padding-bottom: 3rem;
 
       @include global.respond(ultraWide) {
