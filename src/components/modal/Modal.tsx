@@ -1,7 +1,7 @@
-import { Suspense } from "react";
 import styles from "./Modal.module.scss";
 
 interface Props {
+  title: string;
   text: string;
   image: string;
   isActive: boolean;
@@ -9,7 +9,14 @@ interface Props {
   setOpenModal: (value: boolean) => void;
 }
 
-const Modal = ({ text, image, setOpenModal, setisActive, isActive }: Props) => {
+const Modal = ({
+  title,
+  text,
+  image,
+  setOpenModal,
+  setisActive,
+  isActive,
+}: Props) => {
   const handleModalClose = () => {
     setisActive(false);
     setOpenModal(false);
@@ -19,13 +26,11 @@ const Modal = ({ text, image, setOpenModal, setisActive, isActive }: Props) => {
       className={`${styles.container}  ${isActive ? styles["isActive"] : ""}`}
     >
       <div className={styles.modal}>
-        <h3 className={styles.title}>Project</h3>
-        <Suspense fallback={<p>Loading...</p>}>
-          <figure>
-            <img src={image} alt="Project image" loading="lazy" />
-          </figure>
-        </Suspense>
-        <div className={styles.text}>{text}</div>
+        <h3 className={styles.title}>Project - {title}</h3>
+        <figure>
+          <img src={image} alt="Project image" loading="lazy" />
+        </figure>
+        <p className={styles.text}>{text}</p>
         <button onClick={handleModalClose}>Close</button>
       </div>
       <div className={styles.overlay} onClick={handleModalClose}></div>

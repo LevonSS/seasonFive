@@ -8,6 +8,7 @@ import Modal from "../modal/Modal";
 import { useState } from "react";
 
 interface Info {
+  title: string;
   text: string;
   image: string;
 }
@@ -15,7 +16,11 @@ interface Info {
 const Gallery = () => {
   const [openModal, setOpenModal] = useState(false);
   const [isActive, setisActive] = useState(false);
-  const [projectinfo, setProjectInfo] = useState<Info>({ text: "", image: "" });
+  const [projectinfo, setProjectInfo] = useState<Info>({
+    title: "",
+    text: "",
+    image: "",
+  });
 
   const handleClick = (info: Info) => {
     setOpenModal(true);
@@ -49,7 +54,8 @@ const Gallery = () => {
                 isActive={isActive}
                 setisActive={setisActive}
                 setOpenModal={setOpenModal}
-                text="Text Text"
+                title={projectinfo.title}
+                text={projectinfo.text}
                 image={`${_GALLERYPATH + projectinfo.image}`}
               />,
               document.body

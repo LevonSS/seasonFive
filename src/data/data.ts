@@ -1343,17 +1343,69 @@ export const serviceTypes = [
 ];
 
 export const projectsImage = [
-  { image: "image1.webp", text: "Temp text" },
-  { image: "image2.webp", text: "Temp text" },
-  { image: "image3.webp", text: "Temp text" },
-  { image: "image4.webp", text: "Temp text" },
-  { image: "image5.webp", text: "Temp text" },
-  { image: "image6.webp", text: "Temp text" },
-  { image: "image7.webp", text: "Temp text" },
-  { image: "image8.webp", text: "Temp text" },
-  { image: "image9.webp", text: "Temp text" },
-  { image: "image10.webp", text: "Temp text" },
-  { image: "image11.webp", text: "Temp text" },
-  { image: "image12.jpg", text: "Temp text" },
-  { image: "image13.jpg", text: "Temp text" },
+  {
+    image: "image1.webp",
+    title: "0.6 ha Roses",
+    text: "Voskevaz | Heating & cooling, Season5 climate computer, data-driven growing",
+  },
+  {
+    image: "image2.webp",
+    title: "0.45 ha Roses",
+    text: "Voskevaz | Season5 climate computer installed",
+  },
+  {
+    image: "image3.webp",
+    title: "0.1 ha Rose Nursery",
+    text: "0.1 ha Rose Nursery Voskevaz | Heating & cooling system with condensing boilers, Season5 climate computer",
+  },
+  {
+    image: "image4.webp",
+    title: "1.5 ha Roses",
+    text: "Voskevaz | Heating & cooling, Season5 climate computer",
+  },
+  {
+    image: "image5.webp",
+    title: "0.13 ha Rose Nursery",
+    text: "Voskevaz | Heating & cooling system, Season5 climate computer – IN PROGRESS!",
+  },
+  {
+    image: "image6.webp",
+    title: "0.25 ha Potted Flowers",
+    text: "Akunk | Heating & cooling system design",
+  },
+  {
+    image: "image7.webp",
+    title: "3.2 ha Roses",
+    text: "Akunk | Heating system modernization, boiler room upgrade",
+  },
+  {
+    image: "image8.webp",
+    title: "1 ha Spray Roses",
+    text: "Hartavan | Heating, cooling and control system design",
+  },
+  {
+    image: "image9.webp",
+    title: "2.0 ha Spray Roses",
+    text: "Hartavan | Heating system modernisation",
+  },
+  {
+    image: "image10.webp",
+    title: "3.1 ha Spray Roses",
+    text: "Hartavan | Boiler room upgrade",
+  },
+  {
+    image: "image11.webp",
+    title: "0.3 ha Tomatoes",
+    text: "Arzni | Heating & cooling system, data-driven growing with Aranet sensors",
+  },
+  {
+    image: "image12.jpg",
+    title: "1.0 ha Gerbera",
+    text: "Marmarashen | Heating & cooling system design",
+  },
+  {
+    image: "image13.jpg",
+    title: "0.7 ha Sweet Pepper",
+    text: "Parpi | Heating & cooling system design",
+  },
 ];
