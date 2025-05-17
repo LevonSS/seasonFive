@@ -36,7 +36,7 @@ const Header = ({ onContactOpen }: ContactProps) => {
         }`}
         onClick={() => setShowMobileMenu(false)}
       ></div>
-      <Logo isVisibleMobileMenu={isVisibleMobileMenu} image="Logo.jpg" />
+      <Logo isVisibleMobileMenu={isVisibleMobileMenu} image="Logo.png" />
       <HeaderMenu
         isHidden={isMenuHidden}
         onShowMobileMenu={setShowMobileMenu}

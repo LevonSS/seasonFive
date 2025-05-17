@@ -31,6 +31,9 @@
     @include global.respond(md) {
       flex: 0 1 96%;
     }
+    @include global.respond(phone) {
+      min-height: 40rem;
+    }
     & img {
       width: 100%;
     }

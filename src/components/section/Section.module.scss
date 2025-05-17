@@ -20,8 +20,12 @@
     font-weight: 400;
     text-align: center;
 
+    @include global.respond(md) {
+      font-size: 5.5vw;
+    }
+
     @include global.respond(phone) {
-      font-size: 2.4rem;
+      font-size: 3rem;
     }
 
     span {
@@ -44,7 +48,7 @@
   }
 
   & ul {
-    font-size: var(--middle-font-size);
+    font-size: var(--light-middle-font-size);
     padding: 0 var(--middle-font-size);
 
     @include global.respond(md) {
@@ -75,7 +79,7 @@
       }
     }
     & p {
-      font-size: var(--middle-font-size);
+      font-size: var(--light-middle-font-size);
       padding: 0.5rem 0;
 
       @include global.respond(md) {
@@ -88,7 +92,7 @@
     }
 
     & h4 {
-      font-size: var(--middle-font-size);
+      font-size: var(--light-middle-font-size);
       padding: 2rem 0;
     }
 
@@ -122,8 +126,8 @@
     background-color: #9bcda1;
     padding: 38vh 20vw 20vh;
 
-    @include global.respond(tab) {
-      padding: 28vh 20vw 20vh;
+    @include global.respond(md) {
+      padding: 28vh 10vw 20vh;
     }
 
     @include global.respond(phone) {
@@ -135,8 +139,8 @@
     background-color: #e37554;
     padding: 38vh 20vw 20vh;
 
-    @include global.respond(tab) {
-      padding: 28vh 20vw 20vh;
+    @include global.respond(md) {
+      padding: 28vh 10vw 20vh;
     }
 
     @include global.respond(phone) {
@@ -148,12 +152,18 @@
     background-image: url(../../assets/images/AranetBackground.jpg);
     background-size: cover;
     padding: 30vh 20vw 20vh;
+    @include global.respond(md) {
+      padding: 20vh 10vw 10vh;
+    }
   }
 
   &.seasonFive {
     background-image: url(../../assets/images/SeasonFive.jpg);
     background-size: cover;
     padding: 30vh 20vw 20vh;
+    @include global.respond(md) {
+      padding: 20vh 10vw 10vh;
+    }
     h1 {
       color: var(--background-color-white);
     }

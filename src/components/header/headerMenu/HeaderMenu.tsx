@@ -15,7 +15,6 @@ const HeaderMenu = ({
   onShowMobileMenu,
 }: Props) => {
   const { pathname } = useLocation();
-  console.log("params ", pathname);
 
   return (
     <>
