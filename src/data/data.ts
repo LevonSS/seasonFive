@@ -1411,6 +1411,30 @@ export const projectsImage = [
 
 export const seasonFiveProducts = [
   {
+    id: 999 - 3,
+    title: "Season5 Basic Climate Controller",
+    image: "Basic.jpg",
+    pdf: "Basic.pdf",
+    information: {
+      text: [
+        "The Season5 Basic Climate Controller automates the core climate functions of a single-zone greenhouse, helping growers maintain stable temperature and humidity throughout the day with minimal manual intervention. It offers intelligent, weather-adaptive control of ventilation, heating, and cooling systems based on real-time sensor data.",
+      ],
+      includes: [
+        "1 x Control unit with local display",
+        "1 x Indoor temperature and humidity sensor",
+        "1 x Outdoor temperature and humidity sensor",
+        "1 x Wind speed sensor",
+        "2 x Ventilation output channels",
+        "2 x Heating output channels",
+        "2 x Cooling output channels",
+      ],
+      additionaltext: [
+        "Remote access is available via VNC, allowing full control and screen view of the controller from any computer or mobile device — just like operating it on-site.",
+        "Optional: SMS and Telegram alert integration (no subscription required)",
+      ],
+    },
+  },
+  {
     id: 999 - 1,
     title: "Season5 Advanced Climate Controller",
     image: "Advanced.jpg",
@@ -1434,7 +1458,7 @@ export const seasonFiveProducts = [
   },
   {
     id: 999 - 2,
-    title: "Season5 Boiler Controller",
+    title: "Season5 Boiler Room Controller",
     image: "BoilerRoom.png",
     pdf: "BoilerRoom.pdf",
     information: {
@@ -1453,30 +1477,6 @@ export const seasonFiveProducts = [
       ],
       requires: [
         "Integration with Season5 Advanced Climate Controllers for zone-specific temperature requests",
-      ],
-    },
-  },
-  {
-    id: 999 - 3,
-    title: "Season 5 Basic Climate Controller",
-    image: "Basic.jpg",
-    pdf: "Basic.pdf",
-    information: {
-      text: [
-        "The Season 5 Basic Climate Controller automates the core climate functions of a single-zone greenhouse, helping growers maintain stable temperature and humidity throughout the day with minimal manual intervention. It offers intelligent, weather-adaptive control of ventilation, heating, and cooling systems based on real-time sensor data.",
-      ],
-      includes: [
-        "1 x Control unit with local display",
-        "1 x Indoor temperature and humidity sensor",
-        "1 x Outdoor temperature and humidity sensor",
-        "1 x Wind speed sensor",
-        "2 x Ventilation output channels",
-        "2 x Heating output channels",
-        "2 x Cooling output channels",
-      ],
-      additionaltext: [
-        "Remote access is available via VNC, allowing full control and screen view of the controller from any computer or mobile device — just like operating it on-site.",
-        "Optional: SMS and Telegram alert integration (no subscription required)",
       ],
     },
   },

@@ -2,11 +2,9 @@
 
 .itemPage {
   @include global.defaultWidth;
-  padding: 10rem 0;
+  padding: 0;
   display: table;
-  @include global.respond(tab) {
-    padding: 0;
-  }
+
   & > div {
     width: 50%;
     display: table-cell;
