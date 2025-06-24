@@ -73,14 +73,14 @@ const HeaderMenu = ({
           >
             Season5
           </NavLink>
-          <NavLink
+          {/* <NavLink
             title="Season5 Climate Computer"
             className={styles.item}
             to="/blog"
             onClick={() => onShowMobileMenu(() => false)}
           >
             Blog
-          </NavLink>
+          </NavLink> */}
           <a
             className={styles.item}
             onClick={() => {
