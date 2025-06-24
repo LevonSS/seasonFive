@@ -11,13 +11,14 @@
     font-size: 2rem;
     color: #55c57a; //#91b201
     display: inline-block;
+    border: none;
     border-bottom: 1px solid #55c57a;
     padding: 0.3rem 0.8rem;
     transition: all 0.2s;
     cursor: pointer;
+    background-color: transparent;
 
     &:hover {
-      // background-color: #55c57a;
       background-color: #289eec;
       color: #fff;
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);

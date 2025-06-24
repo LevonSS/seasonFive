@@ -13,6 +13,7 @@ import ProductsItem from "./pages/ProductsItem";
 import Projects from "./pages/Projects";
 import Services from "./pages/Services";
 import ScrollToTopButton from "./components/scrollTopButton/ScrollTopButton";
+import SeasonFive from "./components/seasonFive/SeasonFive";
 
 function App() {
   return (
@@ -32,7 +33,7 @@ function App() {
                   headline="Season5 Climate Controllers"
                   type="seasonFive"
                 >
-                  <PackagesAndKits />
+                  <SeasonFive />
                 </Packages>
               }
             />

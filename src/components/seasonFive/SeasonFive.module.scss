@@ -1,0 +1,80 @@
+@use "../../styles/global.scss" as global;
+
+.cardsContainer {
+  @include global.defaultWidth;
+  padding: 10rem 0;
+
+  @include global.respond(tab) {
+    padding: 0;
+  }
+
+  & h2 {
+    font-size: 5.2rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    line-height: 5.8rem;
+
+    @include global.respond(tab) {
+      font-size: 4.2rem;
+      margin-bottom: 2rem;
+    }
+
+    @include global.respond(phone) {
+      font-size: 2.2rem;
+      margin-bottom: 1.5rem;
+      line-height: initial;
+    }
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+    column-gap: 2.6%;
+    margin: 0 auto;
+
+    @include global.respond(laptop) {
+      gap: 2rem 2.5%;
+    }
+    @include global.respond(tab) {
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+    @include global.respond(phone) {
+      gap: 1rem 0;
+      padding: 0;
+    }
+  }
+
+  &__link {
+    padding-top: 3rem;
+    & a:link,
+    & a:visited {
+      text-decoration: none;
+      font-weight: 400;
+
+      font-size: 2rem;
+      color: #55c57a; //#91b201
+      display: inline-block;
+      border-bottom: 1px solid #55c57a;
+      padding: 0.3rem 0.8rem;
+      transition: all 0.2s;
+
+      &:hover {
+        background-color: #55c57a;
+        color: #fff;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+        transform: translateY(-2px);
+      }
+    }
+
+    @include global.respond(tab) {
+      padding: 2rem;
+    }
+
+    @include global.respond(phone) {
+      padding: 2rem 0;
+    }
+  }
+}

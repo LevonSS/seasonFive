@@ -91,7 +91,6 @@ export const packagesAndKits = [
   {
     id: 5,
     title: "Irrigation Plus Package",
-    description: "Irrigation Plus Package",
     image: "TDSPHP02_Irrigation_plus_package.original",
     price: 2160,
     information: {
@@ -1407,5 +1406,75 @@ export const projectsImage = [
     image: "image13.jpg",
     title: "0.7 ha Sweet Pepper",
     text: "Parpi | Heating & cooling system design",
+  },
+];
+
+export const seasonFiveProducts = [
+  {
+    id: 999 - 1,
+    title: "Season5 Advanced Climate Controller",
+    image: "Advanced.jpg",
+    information: {
+      text: [
+        "Designed for greenhouses with advanced infrastructure, this controller ensures high-precision climate management across all key systems — heating, cooling, ventilation, shading, and humidification. Works in tandem with the Season5 Boiler Controller for optimized water-based heating.",
+      ],
+      includes: [
+        "1 x Advanced control unit",
+        "2 x Heating circuit outputs (with mixing valve control)",
+        "1 x Three-stage cooling control (PAD & FAN)",
+        "1 x Fogging humidification output",
+        "1 x Horizontal shading screen output",
+        "1 x Circulation fan output",
+        "1 x Weather station (T/RH, wind speed & direction, solar radiation sensors)",
+        "VNC remote access interface (PC, tablet, smartphone)",
+      ],
+      requires: ["Season5 Boiler Controller for heating power regulation"],
+    },
+  },
+  {
+    id: 999 - 2,
+    title: "Season5 Boiler Controller",
+    image: "BoilerRoom.png",
+    information: {
+      text: [
+        "Centralized controller for managing greenhouse boiler systems and distributing heat to up to three climate zones based on real-time requests from Season5 Advanced Climate Controllers.",
+      ],
+      includes: [
+        "1 x High-performance Segnetics PLC with touchscreen",
+        "2 x Boiler outputs with burner lockout and flame monitoring",
+        "1 x Boiler anti-condensation pump control",
+        "1 x Variable-speed transport pump control",
+        "1 x Mixing valve control for water temperature regulation",
+        "1 x Water pressure sensor with control of pressurization and safety logic",
+        "1 x Weather station data interface",
+        "VNC remote access interface",
+      ],
+      requires: [
+        "Integration with Season5 Advanced Climate Controllers for zone-specific temperature requests",
+      ],
+    },
+  },
+  {
+    id: 999 - 3,
+    title: "Season 5 Basic Climate Controller",
+    image: "Basic.jpg",
+    information: {
+      text: [
+        "The Season 5 Basic Climate Controller automates the core climate functions of a single-zone greenhouse, helping growers maintain stable temperature and humidity throughout the day with minimal manual intervention. It offers intelligent, weather-adaptive control of ventilation, heating, and cooling systems based on real-time sensor data.",
+      ],
+      includes: [
+        "1 x Control unit with local display",
+        "1 x Indoor temperature and humidity sensor",
+        "1 x Outdoor temperature and humidity sensor",
+        "1 x Wind speed sensor",
+        "2 x Ventilation output channels",
+        "2 x Heating output channels",
+        "2 x Cooling output channels",
+      ],
+      additionaltext: [
+        "Remote access is available via VNC, allowing full control and screen view of the controller from any computer or mobile device — just like operating it on-site.",
+        "Optional: SMS and Telegram alert integration (no subscription required)",
+      ],
+    },
   },
 ];
