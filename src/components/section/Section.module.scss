@@ -122,7 +122,9 @@
     }
   }
 
-  &__blue {
+  &__blue,
+  &__terakot,
+  &__darkYellow {
     background-color: #9bcda1;
     padding: 38vh 20vw 20vh;
 
@@ -134,18 +136,12 @@
       padding: 16rem 5vw;
     }
   }
+  &__darkYellow {
+    background-color: #cdc132;
+  }
 
   &__terakot {
     background-color: #e37554;
-    padding: 38vh 20vw 20vh;
-
-    @include global.respond(md) {
-      padding: 28vh 10vw 20vh;
-    }
-
-    @include global.respond(phone) {
-      padding: 16rem 5vw;
-    }
   }
 
   &.aranet {

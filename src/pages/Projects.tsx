@@ -5,9 +5,9 @@ import Section from "../components/section/Section";
 const Projects = () => {
   return (
     <>
-      <Section type="sectionBox__blue">
+      <Section type="sectionBox__darkYellow">
         <h1>
-          <span>Projects</span>
+          <span>Our Projects</span>
         </h1>
         <p>
           Over the years, Season5 has implemented a wide range of climate
