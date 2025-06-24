@@ -14,6 +14,7 @@ export interface ItemProps {
   item: {
     id: number;
     image: string;
+    pdf: string;
     title: string;
     information: {
       text: string[];
@@ -24,7 +25,15 @@ export interface ItemProps {
   };
 }
 
-const ItemPage = ({ item: { image, information, title } }: ItemProps) => {
+const ItemPage = ({ item: { image, pdf, information, title } }: ItemProps) => {
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = `/pdfs/${pdf}`;
+    link.download = pdf;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <>
       <FadeInSectionVariants variants={containerVariants}>
@@ -73,7 +82,7 @@ const ItemPage = ({ item: { image, information, title } }: ItemProps) => {
         </div>
         <motion.div variants={yOffsetVariants}>
           <div className={styles.linkTo}>
-            <Button text="Download PDF" _blank="true" />
+            <Button action={handleDownload} text="Download PDF" _blank="true" />
           </div>
         </motion.div>
       </FadeInSectionVariants>
