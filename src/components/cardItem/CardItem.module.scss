@@ -1,29 +1,12 @@
 @use "../../styles/global.scss" as global;
 
 .cardItem {
-  flex: 0 1 23%;
-  max-width: 25%;
   text-align: center;
   border-radius: 1rem;
   padding: 2.4rem 1rem;
   box-shadow: 0 0 10px #0707071a;
   transition: all 0.2s;
   cursor: pointer;
-
-  @include global.respond(laptop) {
-    flex: 0 1 31.6%;
-    max-width: 31.7%;
-  }
-
-  @include global.respond(tab) {
-    flex: 0 1 48.2%;
-    max-width: initial;
-  }
-
-  @include global.respond(phone) {
-    padding: 1.1rem;
-    flex: 0 1 49%;
-  }
 
   &__title {
     min-height: 10rem;
