@@ -14,7 +14,7 @@ const About = () => {
         </h1>
       </Section>
       <Section type="sectionBox__white" modifier="sectionBox__white--about">
-        <Capsule image="bre-final-office.jpg" />
+        <Capsule image="about.jpg" />
       </Section>
       <Section
         type="sectionBox__white"
