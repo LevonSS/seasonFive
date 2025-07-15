@@ -63,7 +63,7 @@ const HeaderMenu = ({
             to="/packages"
             onClick={() => onShowMobileMenu(() => false)}
           >
-            Aranet
+            Monitoring
           </NavLink>
           <NavLink
             title="Season5 Climate Computer"

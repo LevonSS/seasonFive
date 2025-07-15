@@ -4,14 +4,16 @@ import Section from "../components/section/Section";
 interface Props {
   children: ReactNode;
   headline?: string;
+  description?: string;
   type: string;
 }
 
-const Packages = ({ children, headline, type }: Props) => {
+const Packages = ({ children, headline, description, type }: Props) => {
   return (
     <>
       <Section type={type}>
-        <h1>{headline}</h1>
+        {headline && <h1>{headline}</h1>}
+        {description && <p>{description}</p>}
       </Section>
       {children}
     </>

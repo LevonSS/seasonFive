@@ -151,6 +151,9 @@
     @include global.respond(md) {
       padding: 20vh 10vw 10vh;
     }
+    p {
+      text-align: center;
+    }
   }
 
   &.seasonFive {
@@ -160,8 +163,13 @@
     @include global.respond(md) {
       padding: 20vh 10vw 10vh;
     }
-    h1 {
+    h1,
+    p {
       color: var(--background-color-white);
+    }
+
+    p {
+      text-align: center;
     }
   }
 

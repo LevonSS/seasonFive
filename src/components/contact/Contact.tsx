@@ -45,6 +45,12 @@ const Contact = ({ isOpenContact, onContactClose }: ContactToggleProps) => {
           <p>info@season5.am</p>
         </div>
       </FadeInSection>
+      <FadeInSection delay={0.3} y={100} viewport={false}>
+        <div className={styles.contact__contactgroup}>
+          <h6>Address</h6>
+          <p> 49 Komitas ave.</p>
+        </div>
+      </FadeInSection>
       <FadeInSection delay={0.4} y={100} viewport={false}>
         <div className={styles.contact__contactgroup}>
           <button onClick={() => setIsOpenModal(true)}>Let’s Connect</button>

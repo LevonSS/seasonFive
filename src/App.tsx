@@ -14,6 +14,7 @@ import Projects from "./pages/Projects";
 import Services from "./pages/Services";
 import ScrollToTopButton from "./components/scrollTopButton/ScrollTopButton";
 import SeasonFive from "./components/seasonFive/SeasonFive";
+import { seasonFiveDescription, aranetDescription } from "./helper/constants";
 
 function App() {
   return (
@@ -30,7 +31,8 @@ function App() {
               path="season"
               element={
                 <Packages
-                  headline="Season5 Climate Controllers"
+                  description={seasonFiveDescription}
+                  headline="SEASON5 climate controllers"
                   type="seasonFive"
                 >
                   <SeasonFive />
@@ -40,7 +42,11 @@ function App() {
             <Route
               path="packages"
               element={
-                <Packages headline="Aranet Packages and Kits" type="aranet">
+                <Packages
+                  headline="ARANET MONITORING PACKAGES"
+                  description={aranetDescription}
+                  type="aranet"
+                >
                   <PackagesAndKits />
                 </Packages>
               }
