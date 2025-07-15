@@ -34,7 +34,7 @@
       will-change: filter; /* hints browser to optimize */
       image-rendering: auto;
       -webkit-transform: translate3d(0, 0, 0); /* for Safari/Chrome */
-      cursor: pointer;
+      cursor: zoom-in;
 
       &:hover {
         filter: grayscale(0);
