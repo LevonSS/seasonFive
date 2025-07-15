@@ -71,7 +71,7 @@ const HeaderMenu = ({
             to="/season"
             onClick={() => onShowMobileMenu(() => false)}
           >
-            Season5
+            Control
           </NavLink>
           {/* <NavLink
             title="Season5 Climate Computer"
