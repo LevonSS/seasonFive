@@ -159,13 +159,13 @@
       url("../../assets/about.JPEG");
   }
   &__darkYellow {
-    // background-color: #cdc132;
+    background-color: #cdc132;
     background-image: -webkit-gradient(
         linear,
         left top,
         right bottom,
-        from(rgba(138, 208, 223, 0.8)),
-        to(rgba(138, 208, 223, 0.8))
+        from(rgba(170, 213, 222, 0.8)),
+        to(rgba(170, 213, 222, 0.8))
       ),
       url("../../assets/projects.jpg");
   }
