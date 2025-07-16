@@ -2,7 +2,16 @@
 
 .sectionBox {
   &__yellow {
-    background-color: #69ac59;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right bottom,
+        from(rgba(105, 172, 89, 0.8)),
+        to(rgba(105, 172, 89, 0.8))
+      ),
+      url("../../assets/home.JPEG");
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 30vh 20vw 20vh;
 
     @include global.respond(md) {
@@ -126,6 +135,9 @@
   &__terakot,
   &__darkYellow {
     background-color: #9bcda1;
+
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 38vh 20vw 20vh;
 
     @include global.respond(md) {
@@ -136,8 +148,26 @@
       padding: 16rem 5vw;
     }
   }
+  &__blue {
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right bottom,
+        from(rgba(155, 205, 161, 0.8)),
+        to(rgba(155, 205, 161, 0.8))
+      ),
+      url("../../assets/about.JPEG");
+  }
   &__darkYellow {
-    background-color: #cdc132;
+    // background-color: #cdc132;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right bottom,
+        from(rgba(138, 208, 223, 0.8)),
+        to(rgba(138, 208, 223, 0.8))
+      ),
+      url("../../assets/projects.jpg");
   }
 
   &__terakot {

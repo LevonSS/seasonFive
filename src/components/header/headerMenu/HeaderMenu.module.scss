@@ -15,7 +15,7 @@
 
 @mixin burgerMenu {
   border-radius: 1rem;
-  background-color: #6e6e6e;
+  background-color: black;
   width: 3.4rem;
   height: 2px;
 }
@@ -27,7 +27,6 @@
   top: 0;
   left: -44vw;
   background-color: rgba(115, 153, 47, 0.8);
-  // background-color: #69ac59;
   visibility: hidden;
   opacity: 0;
   transition: all 0.2s;

@@ -32,7 +32,7 @@ function App() {
               element={
                 <Packages
                   description={seasonFiveDescription}
-                  headline="SEASON5 climate controllers"
+                  headline="Season5 Climate Controllers"
                   type="seasonFive"
                 >
                   <SeasonFive />
@@ -43,7 +43,7 @@ function App() {
               path="packages"
               element={
                 <Packages
-                  headline="ARANET MONITORING PACKAGES"
+                  headline="Aranet Monitoring Packages"
                   description={aranetDescription}
                   type="aranet"
                 >
