@@ -10,15 +10,12 @@ const Banner = ({ text }: Props) => {
   return (
     <FadeInSection delay={0.3}>
       <div className={styles.container}>
-        <div className={styles.container__eyebrow}>
-          <h6>let's chat</h6>
-        </div>
         <div className={styles.container__title}>
           <h3>{text}</h3>
         </div>
         <div className={styles.container__link}>
           <span onClick={() => setIsOpenModal(true)}>
-            Let us buy you a coffee.
+            Coffee's on us — let's talk!
           </span>
         </div>
       </div>

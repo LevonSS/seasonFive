@@ -51,6 +51,9 @@
     margin-top: 3.6rem;
     font-size: 1.7rem;
     line-height: 2;
+    color: #70b267;
+    text-transform: uppercase;
+    font-weight: bold;
 
     @include global.respond(tab) {
       margin-top: 1.5rem;
@@ -58,7 +61,7 @@
     }
 
     & span {
-      border-bottom: 1px solid #eac85e;
+      border-bottom: 1px solid #70b267;
       transition: all 0.3s;
       cursor: pointer;
     }
