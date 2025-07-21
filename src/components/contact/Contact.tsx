@@ -4,6 +4,7 @@ import { FadeInSection } from "../../animation/animation";
 // import { motion } from "framer-motion";
 // import { containerVariants, yOffsetVariants } from "../../variants";
 import { useAmoForm } from "../../context/useAmoForm";
+import { handleScrollToTop } from "../../helper/scrollToTop";
 
 export type ContactToggleProps = {
   onContactClose: (param?: string) => void;
@@ -53,7 +54,9 @@ const Contact = ({ isOpenContact, onContactClose }: ContactToggleProps) => {
       </FadeInSection>
       <FadeInSection delay={0.4} y={100} viewport={false}>
         <div className={styles.contact__contactgroup}>
-          <button onClick={() => setIsOpenModal(true)}>Let’s Connect</button>
+          <button onClick={() => handleScrollToTop({ action: setIsOpenModal })}>
+            Let’s Connect
+          </button>
         </div>
       </FadeInSection>
     </div>
@@ -61,29 +64,3 @@ const Contact = ({ isOpenContact, onContactClose }: ContactToggleProps) => {
 };
 
 export default Contact;
-{
-  /* <FadeInSectionVariants variants={containerVariants} viewport={false}>
-        <motion.div variants={yOffsetVariants}>
-          <div className={styles.contact__title}>
-            <h5>Get in touch today.</h5>
-          </div>
-        </motion.div>
-        <motion.div variants={yOffsetVariants}>
-          <div className={styles.contact__contactgroup}>
-            <h6>Phone</h6>
-            <p>(+374) 60 615151</p>
-          </div>
-        </motion.div>
-        <motion.div variants={yOffsetVariants}>
-          <div className={styles.contact__contactgroup}>
-            <h6>Email</h6>
-            <p>info@season5.am</p>
-          </div>
-        </motion.div>
-        <motion.div variants={yOffsetVariants}>
-          <div className={styles.contact__contactgroup}>
-            <button onClick={() => setIsOpenModal(true)}>Let’s Connect</button>
-          </div>
-        </motion.div>
-      </FadeInSectionVariants> */
-}
