@@ -5,6 +5,7 @@ import Button from "../button/Button";
 import Logo from "../logo/Logo";
 import styles from "./Footer.module.scss";
 import { useAmoForm } from "../../context/useAmoForm";
+import { handleScrollToTop } from "../../helper/scrollToTop";
 
 const Footer = () => {
   const { setIsOpenModalMailingList } = useAmoForm();
@@ -28,7 +29,9 @@ const Footer = () => {
         </div>
         <Button
           text="Get on Our Mailing List"
-          action={() => setIsOpenModalMailingList(true)}
+          action={() =>
+            handleScrollToTop({ action: setIsOpenModalMailingList })
+          }
         />
       </div>
       <div className={styles.footer__copyright}>
