@@ -1,37 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { useAmoForm } from "../../context/useAmoForm";
-
-interface AmoFormsLoadFn {
-  (f: Record<string, unknown>): void;
-  f?: Record<string, unknown>[];
-}
-
-interface AmoFormsLoadedFn {
-  (f: Record<string, unknown>, k: string): void;
-  f?: [Record<string, unknown>, string][];
-}
-
-interface AmoFormsParams {
-  setMeta?: (p: Record<string, unknown>) => void;
-  params?: Record<string, unknown>[];
-}
-
-export interface AmoWindow extends Window {
-  amo_forms_params?: AmoFormsParams;
-  amo_forms_load?: AmoFormsLoadFn;
-  amo_forms_loaded?: AmoFormsLoadedFn;
-}
+import { AmoWindow } from "../AmoForm/AmoForm";
 
 const AmoForm: React.FC = () => {
-  const { isOpen } = useAmoForm();
+  const { isOpenMailingList } = useAmoForm();
   const [isScriptLoaded, setIsScriptLoaded] = useState(false);
 
   useEffect(() => {
-    if (isOpen && !isScriptLoaded) {
-      const existingScript = document.getElementById("amoforms_script_1503442");
-      if (!existingScript) {
-        const script = document.createElement("script");
+    if (isOpenMailingList && !isScriptLoaded) {
+      const existingScript = document.getElementById("amoforms_script_1573890");
 
+      if (!existingScript) {
         const w = window as AmoWindow;
 
         w.amo_forms_params = w.amo_forms_params || {
@@ -47,8 +26,8 @@ const AmoForm: React.FC = () => {
           };
 
         w.amo_forms_load({
-          id: "1503442",
-          hash: "8bf67c583a4281883e3e8968af22607a",
+          id: "1573890",
+          hash: "2d73e6f819531dd7c4be757d0b98dcb9",
           locale: "ru",
         });
 
@@ -58,22 +37,30 @@ const AmoForm: React.FC = () => {
             (w.amo_forms_loaded!.f = w.amo_forms_loaded!.f || []).push([f, k]);
           };
 
-        script.id = "amoforms_script_1503442";
+        // Create and append script
+        const script = document.createElement("script");
+        script.id = "amoforms_script_1573890";
         script.src =
-          "https://forms.amocrm.ru/forms/assets/js/amoforms.js?1746892119";
+          "https://forms.amocrm.ru/forms/assets/js/amoforms.js?1753079389";
         script.async = true;
         script.charset = "utf-8";
-        script.onload = () => setIsScriptLoaded(true);
 
-        const el = document.querySelector(".amoFormContainer");
+        script.onload = () => {
+          setIsScriptLoaded(true);
+        };
+
+        const el = document.querySelector(".amoFormContainerMailingList");
         if (el) {
           el.appendChild(script);
+        } else {
+          // fallback to append to body if container not found
+          document.body.appendChild(script);
         }
       } else {
         setIsScriptLoaded(true);
       }
     }
-  }, [isOpen, isScriptLoaded]);
+  }, [isOpenMailingList, isScriptLoaded]);
 
   return <div></div>;
 };

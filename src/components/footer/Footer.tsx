@@ -4,8 +4,10 @@ import { Link } from "react-router";
 import Button from "../button/Button";
 import Logo from "../logo/Logo";
 import styles from "./Footer.module.scss";
+import { useAmoForm } from "../../context/useAmoForm";
 
 const Footer = () => {
+  const { setIsOpenModalMailingList } = useAmoForm();
   return (
     <footer className={styles.footer}>
       <div className={styles.footer__topSection}>
@@ -24,7 +26,10 @@ const Footer = () => {
             <BsInstagram />
           </Link>
         </div>
-        <Button text="Get on Our Mailing List" link="/about" />
+        <Button
+          text="Get on Our Mailing List"
+          action={() => setIsOpenModalMailingList(true)}
+        />
       </div>
       <div className={styles.footer__copyright}>
         <span>©2025 Season Five LLC | Yerevan, Armenia</span>

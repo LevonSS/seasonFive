@@ -5,7 +5,6 @@ import { useAmoForm } from "../../context/useAmoForm";
 
 interface Props {
   children: ReactNode;
-  setIsOpen: (value: boolean) => void;
 }
 
 const ModalAmoForm = ({ children }: Props) => {

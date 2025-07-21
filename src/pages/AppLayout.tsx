@@ -5,13 +5,13 @@ import Contact from "../components/contact/Contact";
 import Footer from "../components/footer/Footer";
 import ScrollToTop from "../components/scrollToTop/ScrollToTop";
 import ModalAmoForm from "../components/modalAmoForm/ModalAmoForm";
-import { useAmoForm } from "../context/useAmoForm";
 import AmoForm from "../components/AmoForm/AmoForm";
 import { createPortal } from "react-dom";
+import AmoFormMailingList from "../components/AmoFormMailingList/AmoFormMailingList";
+import ModalMailingList from "../components/modalMailingList/ModalMailingList";
 
 const AppLayout = () => {
   const [isOpenContact, setOpenContact] = useState(false);
-  const { setIsOpen } = useAmoForm();
 
   const handleToggleContact = (param?: string) => {
     if (param) {
@@ -37,11 +37,19 @@ const AppLayout = () => {
       <Footer />
 
       {createPortal(
-        <ModalAmoForm setIsOpen={setIsOpen}>
+        <ModalAmoForm>
           <div className="amoFormContainer">
             <AmoForm />
           </div>
         </ModalAmoForm>,
+        document.body
+      )}
+      {createPortal(
+        <ModalMailingList>
+          <div className="amoFormContainerMailingList">
+            <AmoFormMailingList />
+          </div>
+        </ModalMailingList>,
         document.body
       )}
     </>
