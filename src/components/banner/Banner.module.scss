@@ -16,15 +16,6 @@
     padding: 6rem 10vw;
   }
 
-  &__eyebrow {
-    & h6 {
-      font-size: 1.1rem;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      color: #eac85e;
-    }
-  }
-
   &__title {
     font-size: 2.5vw;
     @include global.respond(ultraWide) {
