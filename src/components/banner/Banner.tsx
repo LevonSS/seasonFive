@@ -21,7 +21,7 @@ const Banner = ({ text }: Props) => {
         </div>
         <div className={styles.container__link}>
           <span onClick={() => handleScrollToTop({ action: setIsOpenModal })}>
-            Let us buy you a coffee.
+            Coffee's on us — let's talk!
           </span>
         </div>
       </div>
