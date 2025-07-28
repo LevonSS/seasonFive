@@ -1,6 +1,7 @@
 import Banner from "../components/banner/Banner";
 import Capsule from "../components/capsule/Capsule";
 import Section from "../components/section/Section";
+import abourImg from "../assets/images/about.jpg";
 
 const About = () => {
   return (
@@ -14,7 +15,7 @@ const About = () => {
         </h1>
       </Section>
       <Section type="sectionBox__white" modifier="sectionBox__white--about">
-        <Capsule image="about.jpg" />
+        <Capsule image={abourImg} />
       </Section>
       <Section
         type="sectionBox__white"

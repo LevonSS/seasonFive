@@ -45,7 +45,7 @@ const ItemPage = ({ item: { image, pdf, information, title } }: ItemProps) => {
         <div className={styles.itemPage}>
           <div className={styles.image}>
             <motion.div variants={yOffsetVariants}>
-              <img src={`${image}`} alt="Image" />
+              <img src={image} alt="Image" />
             </motion.div>
           </div>
           <motion.div variants={xOffsetVariants}>

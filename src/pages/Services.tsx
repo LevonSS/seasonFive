@@ -3,6 +3,7 @@ import Capsule from "../components/capsule/Capsule";
 import Section from "../components/section/Section";
 import ServiceTypes from "../components/servicesTypes/ServiceTypes";
 import { serviceTypes } from "../data/data";
+import boilerroom from "../assets/images/boilerroom.jpg";
 
 const Services = () => {
   return (
@@ -18,7 +19,7 @@ const Services = () => {
         </p>
       </Section>
       <Section type="sectionBox__white" modifier="sectionBox__white--about">
-        <Capsule image="boilerroom.jpg" />
+        <Capsule image={boilerroom} />
       </Section>
       <Section type="sectionBox__white" modifier="sectionBox__white--mt0">
         {serviceTypes.map((type) => (

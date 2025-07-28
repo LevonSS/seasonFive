@@ -1,6 +1,11 @@
 import contolImg1 from "../assets/images/seasonFive/Basic.jpg";
 import contolImg2 from "../assets/images/seasonFive/Advanced.jpg";
 import contolImg3 from "../assets/images/seasonFive/BoilerRoom.png";
+import heating from "../assets/images/heating.png";
+import cooling from "../assets/images/cooling.png";
+import climatecontrol from "../assets/images/climatecontrol.jpg";
+import datadriven from "../assets/images/datadriven.png";
+import retrofitting from "../assets/images/retrofitting.png";
 
 export const packagesAndKits = [
   {
@@ -1279,7 +1284,7 @@ export const products = [
 export const serviceTypes = [
   {
     type: "Heating Systems",
-    image: "heating.png",
+    image: heating,
     text: [
       "Uneven temperatures? High fuel costs? We design and implement:",
       "Tailored solutions that maximize heat efficiency while reducing energy bills.",
@@ -1292,7 +1297,7 @@ export const serviceTypes = [
   },
   {
     type: "Cooling & Ventilation",
-    image: "cooling.png",
+    image: cooling,
     text: [
       "Struggling with overheating or poor airflow? We offer:",
       "Climate stability = stronger plants and fewer diseases.",
@@ -1305,7 +1310,7 @@ export const serviceTypes = [
   },
   {
     type: "Automation & Climate Computers",
-    image: "climatecontrol.jpg",
+    image: climatecontrol,
     text: [
       "Take control of your greenhouse with smart technology:",
       "Affordable, powerful, and scalable.",
@@ -1319,7 +1324,7 @@ export const serviceTypes = [
   },
   {
     type: "Data-Driven Growing",
-    image: "datadriven.png",
+    image: datadriven,
     text: [
       "We believe that better decisions come from better data:",
       "No more guesswork. Just smart growing.",
@@ -1332,7 +1337,7 @@ export const serviceTypes = [
   },
   {
     type: "Retrofitting & Upgrades",
-    image: "retrofitting.png",
+    image: retrofitting,
     text: [
       "Modernize your existing greenhouse — without starting from scratch:",
       "Every greenhouse deserves a second life.",

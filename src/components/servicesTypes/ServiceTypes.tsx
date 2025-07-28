@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { _SERVICESIMAGEPATH } from "../../helper/constants";
 import styles from "./ServiceTypes.module.scss";
 import FadeInSectionVariants from "../../animation/animation";
 import {
@@ -21,7 +20,7 @@ const ServiceTypes = ({ type, image, text, properties }: ServiceTypesProps) => {
       <div className={styles.serviceTypesBox}>
         <div className={styles.serviceTypesBox__imgBox}>
           <motion.div variants={yOffsetVariants}>
-            <img src={`${_SERVICESIMAGEPATH}${image}`} />
+            <img src={image} />
           </motion.div>
         </div>
         <div className={styles.serviceTypesBox__textBox}>
