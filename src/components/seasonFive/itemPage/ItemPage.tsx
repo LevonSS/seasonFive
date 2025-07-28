@@ -33,7 +33,7 @@ const ItemPage = ({ item: { image, pdf, information, title } }: ItemProps) => {
     link.click();
     document.body.removeChild(link);
   };
-  console.log(image);
+
   return (
     <>
       <FadeInSectionVariants variants={containerVariants}>

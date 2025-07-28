@@ -35,6 +35,80 @@ import package6 from "../assets/images/packagesAndKits/TDSPHP01_Irrigation_exper
 import package7 from "../assets/images/packagesAndKits/Drainage_Plus_Black_200x200px_JQZhx6H.original.webp";
 import package8 from "../assets/images/packagesAndKits/Drainage_Expert_Black_1000x1000px_KNePqsO.original.webp";
 
+//Aranet products
+import product1 from "../assets/images/packagesAndKits/pro_base-1-1080x1080.original.webp";
+import product2 from "../assets/images/packagesAndKits/base_pro_plus_1_no_lte-1080x1080.original.webp";
+import product3 from "../assets/images/packagesAndKits/base_pro_plus_1_lte-1-1080x1080.original.webp";
+
+import product4 from "../assets/images/packagesAndKits/Aranet4_PRO_C_900x900.original.webp";
+import product5 from "../assets/images/packagesAndKits/Radons_C_PRO.original.webp";
+import product6 from "../assets/images/packagesAndKits/Aranet2_PRO_C_900x900_GA0zDgw.original.webp";
+import product7 from "../assets/images/packagesAndKits/T_Compact_sensor_1_900x900.original.webp";
+import product8 from "../assets/images/packagesAndKits/t_rh_ip42-1080x1080.original.webp";
+import product9 from "../assets/images/packagesAndKits/T_RH_IP67_sensor_1_900x900.original.webp";
+import product10 from "../assets/images/packagesAndKits/T-RH_sensor_with_Radiation_Shield_900x900.original.webp";
+import product11 from "../assets/images/packagesAndKits/Radon_Plus_Sensor_Features_2.original.webp";
+import product12 from "../assets/images/packagesAndKits/4xT-Probe_sensor_1_C.original.webp";
+import product13 from "../assets/images/packagesAndKits/Differential_Pressure_sensor_1_900x900.original.webp";
+import product14 from "../assets/images/packagesAndKits/CO2_and_Temperature_sensor_1_900x900.original.webp";
+import product15 from "../assets/images/packagesAndKits/lux_sensor-1080x1080.original.webp";
+import product16 from "../assets/images/packagesAndKits/lux_sensor-1080x1080.original (1).webp";
+import product17 from "../assets/images/packagesAndKits/IR_Plant_Temperature_sensor.original.webp";
+import product18 from "../assets/images/packagesAndKits/SAP_Flow_Sensor_1_900x900.original.webp";
+import product19 from "../assets/images/packagesAndKits/Stem_Diameter_sensor_kit_900x900.original.webp";
+import product20 from "../assets/images/packagesAndKits/Soil_Moisture_sensor_1_900x900.original.webp";
+import product21 from "../assets/images/packagesAndKits/Soil_sensor_WET150_1_900x900.original.webp";
+import product22 from "../assets/images/packagesAndKits/Soil_sensor_Teros-12_1_900x900.original.webp";
+import product23 from "../assets/images/packagesAndKits/EC__Ph_sensor_-_1.original.webp";
+import product24 from "../assets/images/packagesAndKits/EC__Ph_sensor_-_Config_2-1.original.webp";
+import product25 from "../assets/images/packagesAndKits/ph_sensor_1.original.webp";
+import product26 from "../assets/images/packagesAndKits/aranet-drainage-sensor_0-1080x1080.original.webp";
+import product27 from "../assets/images/packagesAndKits/Horti_Drainage_Sensor_-_1.original.webp";
+import product28 from "../assets/images/packagesAndKits/aranet-rain-and-precipitation-sensor_1-1080x10.original.webp";
+import product29 from "../assets/images/packagesAndKits/weight_sensor_1-1080x1080.original.webp";
+import product30 from "../assets/images/packagesAndKits/new-aranet-sensors-web_page_1-1080x1080.original.webp";
+import product31 from "../assets/images/packagesAndKits/Slab_Weight_Sensor-3.original.webp";
+import product32 from "../assets/images/packagesAndKits/Ultrasonic_Distance_sensor_900x900.original.webp";
+import product33 from "../assets/images/packagesAndKits/sensors-one-phase-meter-fleet-1080x1080.original.webp";
+import product34 from "../assets/images/packagesAndKits/sensors-three-phase-meter-fleet-1080x1080.original.webp";
+import product35 from "../assets/images/packagesAndKits/AC_Houer_Meter_1_900x900.original.webp";
+import product36 from "../assets/images/packagesAndKits/PT100_sensor_1_900x900.original.webp";
+import product361 from "../assets/images/packagesAndKits/TDSPT306_PT100_sensor_extendedoriginal_2.original.webp";
+import product37 from "../assets/images/packagesAndKits/T-probe_sensor_1_900x900.original.webp";
+import product38 from "../assets/images/packagesAndKits/T-RH_probe_1_900x900.original.webp";
+import product39 from "../assets/images/packagesAndKits/T-RH_probe_ammonia_resistant_1_900x900.original.webp";
+import product40 from "../assets/images/packagesAndKits/Aranet4_PRO_900x900.original.webp";
+import product41 from "../assets/images/packagesAndKits/NH3_sensor_kit_900x900.original.webp";
+import product42 from "../assets/images/packagesAndKits/Radio_Site_Survey_Ping-Pong_Kit_1_900x900.original.webp";
+import product43 from "../assets/images/packagesAndKits/0-10_VDC_transmitter_1_900x900.original.webp";
+import product44 from "../assets/images/packagesAndKits/0-10_VDC_transmitter_1_900x900.original.webp";
+import product45 from "../assets/images/packagesAndKits/0-10_VDC_transmitter_1_900x900.original.webp";
+import product46 from "../assets/images/packagesAndKits/Transmitter_Voltage_sensor_1_900x900.original.webp";
+import product47 from "../assets/images/packagesAndKits/Transmitter_Voltage_sensor_1_900x900.original.webp";
+import product48 from "../assets/images/packagesAndKits/0-10_VDC_transmitter_1_900x900.original.webp";
+import product49 from "../assets/images/packagesAndKits/Transmitter_Voltage_sensor_1_900x900.original.webp";
+import product50 from "../assets/images/packagesAndKits/Transmitter_Voltage_sensor_1_900x900.original.webp";
+import product51 from "../assets/images/packagesAndKits/Aranet_PT1000_transmitter_1_900x900.original.webp";
+import product52 from "../assets/images/packagesAndKits/Aranet_PT1000_transmitter_1_900x900.original.webp";
+import product53 from "../assets/images/packagesAndKits/Aranet_Bag_No_Screen_1.original.webp";
+import product54 from "../assets/images/packagesAndKits/Extention_WET150.original.webp";
+import product55 from "../assets/images/packagesAndKits/WET150_Installation_Accessory_1.original.webp";
+import product56 from "../assets/images/packagesAndKits/T_RH_replacement_probe_1.1.original.webp";
+import product57 from "../assets/images/packagesAndKits/T_RH_ammonia_resistant_replacement_probe_1.1.original.webp";
+import product58 from "../assets/images/packagesAndKits/T-RH_probe_extension_cord_1_900x900-2.original.webp";
+import product59 from "../assets/images/packagesAndKits/wall-mount_1-1080x1080.original.webp";
+import product60 from "../assets/images/packagesAndKits/dol.53-sensor_web_4-1080x1080.original.webp";
+import product61 from "../assets/images/packagesAndKits/Aranet4_AC_Power_Adapter_EU_900x900.original.webp";
+import product62 from "../assets/images/packagesAndKits/Aranet_PRO_Plus_PRO_Plus_LTE_Base_Station_Moun.original.webp";
+import product63 from "../assets/images/packagesAndKits/viens_1-1080x1080.original.webp";
+import product64 from "../assets/images/packagesAndKits/divi_1-1080x1080.original.webp";
+import product65 from "../assets/images/packagesAndKits/WET_150_stand_1.original.webp";
+import product66 from "../assets/images/packagesAndKits/poe-injector_aranet_web_1-1080x1080.original.webp";
+import product67 from "../assets/images/packagesAndKits/modbus-rtu-converter_1-1-1080x1080.original.webp";
+import product68 from "../assets/images/packagesAndKits/poe-injector-for-aranet-pro-base-station-1080x.original.webp";
+import product69 from "../assets/images/packagesAndKits/f6a3583-1080x1080.original.webp";
+import product70 from "../assets/images/packagesAndKits/Different_Kit_for_Web_page_3.original.webp";
+
 export const packagesAndKits = [
   {
     id: 1,
@@ -204,7 +278,7 @@ export const products = [
     {
       id: 1,
       title: "Aranet PRO base station",
-      image: "pro_base-1-1080x1080.original",
+      image: product1,
       price: 490,
       information: {
         linkTo: "https://aranet.com/en/pro/products/aranet-pro-12-base-station",
@@ -219,7 +293,7 @@ export const products = [
     {
       id: 2,
       title: "Aranet PRO Plus base station",
-      image: "base_pro_plus_1_no_lte-1080x1080.original",
+      image: product2,
       price: 490,
       information: {
         linkTo:
@@ -236,7 +310,7 @@ export const products = [
     {
       id: 3,
       title: "Aranet PRO Plus LTE base station",
-      image: "base_pro_plus_1_lte-1-1080x1080.original",
+      image: product3,
       price: 560,
       information: {
         linkTo:
@@ -257,7 +331,7 @@ export const products = [
       id: 4,
       title: "Aranet4 PRO",
       description: "CO2, temperature, relative humidity, atmospheric pressure",
-      image: "Aranet4_PRO_C_900x900.original",
+      image: product4,
       price: 199,
       information: {
         linkTo: "https://aranet.com/en/pro/products/aranet4-pro",
@@ -273,7 +347,7 @@ export const products = [
       id: 5,
       title: "Radon Plus PRO",
       description: "The fastest battery-operated radon sensor",
-      image: "Radons_C_PRO.original",
+      image: product5,
       price: 249,
       information: {
         linkTo: "https://aranet.com/en/pro/products/aranet-radon-plus-pro",
@@ -295,7 +369,7 @@ export const products = [
       id: 6,
       title: "Aranet2 PRO",
       description: "Temperature, relative humidity",
-      image: "Aranet2_PRO_C_900x900_GA0zDgw.original",
+      image: product6,
       price: 95,
       information: {
         linkTo: "https://aranet.com/en/pro/products/aranet2-pro",
@@ -310,7 +384,7 @@ export const products = [
     {
       id: 7,
       title: "T Compact sensor",
-      image: "T_Compact_sensor_1_900x900.original",
+      image: product7,
       price: 70,
       information: {
         linkTo: "https://aranet.com/en/pro/products/t-compact-sensor",
@@ -325,7 +399,7 @@ export const products = [
     {
       id: 8,
       title: "T/RH sensor IP42",
-      image: "t_rh_ip42-1080x1080.original",
+      image: product8,
       price: 80,
       information: {
         linkTo: "https://aranet.com/en/pro/products/t-rh-sensor",
@@ -339,7 +413,7 @@ export const products = [
     {
       id: 9,
       title: "T/RH IP67 sensor",
-      image: "T_RH_IP67_sensor_1_900x900.original",
+      image: product9,
       price: 105,
       information: {
         linkTo: "https://aranet.com/en/pro/products/aranet-trh-ip67",
@@ -354,7 +428,7 @@ export const products = [
     {
       id: 10,
       title: "T/RH sensor with Radiation Shield",
-      image: "T-RH_sensor_with_Radiation_Shield_900x900.original",
+      image: product10,
       price: 335,
       information: {
         linkTo:
@@ -370,7 +444,7 @@ export const products = [
     {
       id: 11,
       title: "PM sensor",
-      image: "Radon_Plus_Sensor_Features_2.original",
+      image: product11,
       price: 240,
       information: {
         linkTo: "https://aranet.com/en/pro/products/aranet_pm_sensor",
@@ -385,7 +459,7 @@ export const products = [
     {
       id: 12,
       title: "4xT-Probe sensor",
-      image: "4xT-Probe_sensor_1_C.original",
+      image: product12,
       price: 490,
       information: {
         linkTo: "https://aranet.com/en/pro/products/aranet-4x-t-probe-sensor",
@@ -399,7 +473,7 @@ export const products = [
     {
       id: 13,
       title: "Differential Pressure sensor",
-      image: "Differential_Pressure_sensor_1_900x900.original",
+      image: product13,
       price: 375,
       information: {
         linkTo:
@@ -415,7 +489,7 @@ export const products = [
     {
       id: 14,
       title: "CO2 and Temperature sensor",
-      image: "CO2_and_Temperature_sensor_1_900x900.original",
+      image: product14,
       price: 335,
       information: {
         linkTo: "https://aranet.com/en/pro/products/co2_and_temperature_sensor",
@@ -431,7 +505,7 @@ export const products = [
     {
       id: 15,
       title: "Aranet LUX sensor",
-      image: "lux_sensor-1080x1080.original",
+      image: product15,
       price: 575,
       information: {
         linkTo: "https://aranet.com/en/pro/products/lux_sensor",
@@ -446,7 +520,7 @@ export const products = [
     {
       id: 16,
       title: "PAR sensor",
-      image: "lux_sensor-1080x1080.original (1)",
+      image: product16,
       price: 575,
       information: {
         linkTo: "https://aranet.com/en/pro/products/par_sensor",
@@ -460,7 +534,7 @@ export const products = [
     {
       id: 17,
       title: "IR Plant Temperature sensor",
-      image: "IR_Plant_Temperature_sensor.original",
+      image: product17,
       price: 500,
       information: {
         linkTo: "https://aranet.com/en/pro/products/Aranet_IR_Plant_Sensor",
@@ -475,7 +549,7 @@ export const products = [
     {
       id: 18,
       title: "Sap Flow sensor kit",
-      image: "SAP_Flow_Sensor_1_900x900.original",
+      image: product18,
       price: 1390,
       information: {
         linkTo: "https://aranet.com/en/pro/products/aranet-sap-flow-sensor-kit",
@@ -490,7 +564,7 @@ export const products = [
     {
       id: 19,
       title: "Stem Diameter sensor kit",
-      image: "Stem_Diameter_sensor_kit_900x900.original",
+      image: product19,
       price: 1190,
       information: {
         linkTo: "https://aranet.com/en/pro/products/stem_diameter_sensor_kit",
@@ -505,7 +579,7 @@ export const products = [
     {
       id: 20,
       title: "Soil Moisture sensor",
-      image: "Soil_Moisture_sensor_1_900x900.original",
+      image: product20,
       price: 145,
       information: {
         linkTo: "https://aranet.com/en/pro/products/soil_moisture_sensor_10_m",
@@ -521,7 +595,7 @@ export const products = [
     {
       id: 21,
       title: "Soil sensor (WET150)",
-      image: "Soil_sensor_WET150_1_900x900.original",
+      image: product21,
       price: 670,
       information: {
         linkTo: "https://aranet.com/en/pro/products/aranet_soil_sensor_wet150",
@@ -536,7 +610,7 @@ export const products = [
     {
       id: 22,
       title: "Soil sensor (Teros-12)",
-      image: "Soil_sensor_Teros-12_1_900x900.original",
+      image: product22,
       price: 795,
       information: {
         linkTo:
@@ -550,7 +624,7 @@ export const products = [
     {
       id: 23,
       title: "EC & pH sensor",
-      image: "EC__Ph_sensor_-_1.original",
+      image: product23,
       price: 2995,
       information: {
         linkTo: "https://aranet.com/en/pro/products/ec-and-ph-sensor",
@@ -564,7 +638,7 @@ export const products = [
     {
       id: 24,
       title: "EC sensor",
-      image: "EC__Ph_sensor_-_Config_2-1.original",
+      image: product24,
       price: 1795,
       information: {
         linkTo: "https://aranet.com/en/pro/products/ec-sensor",
@@ -578,7 +652,7 @@ export const products = [
     {
       id: 25,
       title: "pH sensor",
-      image: "ph_sensor_1.original",
+      image: product25,
       price: 1695,
       information: {
         linkTo: "https://aranet.com/en/pro/products/pH-sensor",
@@ -592,7 +666,7 @@ export const products = [
     {
       id: 26,
       title: "Drainage sensor",
-      image: "aranet-drainage-sensor_0-1080x1080.original",
+      image: product26,
       price: 225,
       information: {
         linkTo: "https://aranet.com/en/pro/products/aranet-drainage-sensor",
@@ -607,7 +681,7 @@ export const products = [
     {
       id: 27,
       title: "Horticulture Drainage sensor",
-      image: "Horti_Drainage_Sensor_-_1.original",
+      image: product27,
       price: 1095,
       information: {
         linkTo: "https://aranet.com/en/pro/products/horti-drainage-sensor",
@@ -621,7 +695,7 @@ export const products = [
     {
       id: 28,
       title: "Rain and Precipitation sensor kit",
-      image: "aranet-rain-and-precipitation-sensor_1-1080x10.original",
+      image: product28,
       price: 525,
       information: {
         linkTo:
@@ -643,7 +717,7 @@ export const products = [
     {
       id: 29,
       title: "Weight sensor",
-      image: "weight_sensor_1-1080x1080.original",
+      image: product29,
       price: 310,
       information: {
         linkTo: "https://aranet.com/en/pro/products/weight_sensor_100kg",
@@ -657,7 +731,7 @@ export const products = [
     {
       id: 30,
       title: "Weight sensor with frame",
-      image: "new-aranet-sensors-web_page_1-1080x1080.original",
+      image: product30,
       price: 1195,
       information: {
         linkTo:
@@ -672,7 +746,7 @@ export const products = [
     {
       id: 31,
       title: "Slab Weight sensor",
-      image: "Slab_Weight_Sensor-3.original",
+      image: product31,
       price: 2495,
       information: {
         linkTo: "https://aranet.com/en/pro/products/slab-weight-sensor",
@@ -686,7 +760,7 @@ export const products = [
     {
       id: 32,
       title: "Ultrasonic Distance sensor",
-      image: "Ultrasonic_Distance_sensor_900x900.original",
+      image: product32,
       price: 900,
       information: {
         linkTo: "https://aranet.com/en/pro/products/Ultrasonic_Distance_sensor",
@@ -697,7 +771,7 @@ export const products = [
     {
       id: 33,
       title: "Aranet One-Phase Energy meter kit",
-      image: "sensors-one-phase-meter-fleet-1080x1080.original",
+      image: product33,
       price: 165,
       information: {
         linkTo:
@@ -713,7 +787,7 @@ export const products = [
     {
       id: 34,
       title: "Aranet Three-Phase Energy meter kit",
-      image: "sensors-three-phase-meter-fleet-1080x1080.original",
+      image: product34,
       price: 265,
       information: {
         linkTo:
@@ -729,7 +803,7 @@ export const products = [
     {
       id: 35,
       title: "AC Hour meter",
-      image: "AC_Houer_Meter_1_900x900.original",
+      image: product35,
       price: 300,
       information: {
         linkTo: "https://aranet.com/en/pro/products/ac_hour_meter",
@@ -744,7 +818,7 @@ export const products = [
     {
       id: 36,
       title: "PT100 sensor",
-      image: "PT100_sensor_1_900x900.original",
+      image: product36,
       price: 160,
       information: {
         linkTo: "https://aranet.com/en/pro/products/aranet_pt100_sensor",
@@ -759,7 +833,7 @@ export const products = [
     {
       id: 361,
       title: "PT100 Temperature sensor (Extended Range)",
-      image: "TDSPT306_PT100_sensor_extendedoriginal_2.original",
+      image: product361,
       price: 185,
       information: {
         linkTo:
@@ -776,7 +850,7 @@ export const products = [
     {
       id: 37,
       title: "T-Probe sensor",
-      image: "T-probe_sensor_1_900x900.original",
+      image: product37,
       price: 150,
       information: {
         linkTo: "https://aranet.com/en/pro/products/t-probe-sensor-10-m",
@@ -792,7 +866,7 @@ export const products = [
     {
       id: 38,
       title: "T/RH Probe",
-      image: "T-RH_probe_1_900x900.original",
+      image: product38,
       price: 180,
       information: {
         linkTo: "https://aranet.com/en/pro/products/aranet-t-rh-probe",
@@ -808,7 +882,7 @@ export const products = [
     {
       id: 39,
       title: "T/RH Probe (ammonia resistant)",
-      image: "T-RH_probe_ammonia_resistant_1_900x900.original",
+      image: product39,
       price: 240,
       information: {
         linkTo:
@@ -824,7 +898,7 @@ export const products = [
       id: 40,
       title: "Aranet4 PRO without display",
       description: "Temperature, relative humidity",
-      image: "Aranet4_PRO_900x900.original",
+      image: product40,
       price: 189,
       information: {
         linkTo:
@@ -840,7 +914,7 @@ export const products = [
     {
       id: 41,
       title: "NH3 sensor kit",
-      image: "NH3_sensor_kit_900x900.original",
+      image: product41,
       price: 1440,
       information: {
         linkTo: "https://aranet.com/en/pro/products/nh3_sensor_kit",
@@ -857,7 +931,7 @@ export const products = [
     {
       id: 42,
       title: "Radio Site Survey Ping-Pong kit",
-      image: "Radio_Site_Survey_Ping-Pong_Kit_1_900x900.original",
+      image: product42,
       price: 175,
       information: {
         linkTo:
@@ -874,7 +948,7 @@ export const products = [
     {
       id: 43,
       title: "Dry Contact Pulse Counter",
-      image: "0-10_VDC_transmitter_1_900x900.original",
+      image: product43,
       price: 102,
       information: {
         linkTo: "https://aranet.com/en/pro/products/pulse_counter_sensor",
@@ -890,7 +964,7 @@ export const products = [
     {
       id: 44,
       title: "Dry Contact Hour Meter",
-      image: "0-10_VDC_transmitter_1_900x900.original",
+      image: product44,
       price: 102,
       information: {
         linkTo:
@@ -905,7 +979,7 @@ export const products = [
     {
       id: 45,
       title: "4-20 mA transmitter",
-      image: "0-10_VDC_transmitter_1_900x900.original",
+      image: product45,
       price: 150,
       information: {
         linkTo: "https://aranet.com/en/pro/products/4_20_ma_transmitter",
@@ -920,7 +994,7 @@ export const products = [
     {
       id: 46,
       title: "4-20 mA transmitter with 12 VDC PSU",
-      image: "Transmitter_Voltage_sensor_1_900x900.original",
+      image: product46,
       price: 250,
       information: {
         linkTo:
@@ -936,7 +1010,7 @@ export const products = [
     {
       id: 47,
       title: "4-20 mA transmitter with 24 VDC PSU",
-      image: "Transmitter_Voltage_sensor_1_900x900.original",
+      image: product47,
       price: 250,
       information: {
         linkTo:
@@ -952,7 +1026,7 @@ export const products = [
     {
       id: 48,
       title: "0-10 VDC transmitter",
-      image: "0-10_VDC_transmitter_1_900x900.original",
+      image: product48,
       price: 150,
       information: {
         linkTo: "https://aranet.com/en/pro/products/0_10_vdc_transmitter",
@@ -968,7 +1042,7 @@ export const products = [
     {
       id: 49,
       title: "0-10 V transmitter with 12 VDC PSU",
-      image: "Transmitter_Voltage_sensor_1_900x900.original",
+      image: product49,
       price: 250,
       information: {
         linkTo:
@@ -984,7 +1058,7 @@ export const products = [
     {
       id: 50,
       title: "0-10 V transmitter with 24 VDC PSU",
-      image: "Transmitter_Voltage_sensor_1_900x900.original",
+      image: product50,
       price: 250,
       information: {
         linkTo:
@@ -1000,7 +1074,7 @@ export const products = [
     {
       id: 51,
       title: "PT1000 transmitter",
-      image: "Aranet_PT1000_transmitter_1_900x900.original",
+      image: product51,
       price: 150,
       information: {
         linkTo: "https://aranet.com/en/pro/products/pt1000_transmitter",
@@ -1016,7 +1090,7 @@ export const products = [
     {
       id: 52,
       title: "PT100 transmitter",
-      image: "Aranet_PT1000_transmitter_1_900x900.original",
+      image: product52,
       price: 150,
       information: {
         linkTo: "https://aranet.com/en/pro/products/pt100_transmitter",
@@ -1035,7 +1109,7 @@ export const products = [
     {
       id: 53,
       title: "Navy Blue Travel Case",
-      image: "Aranet_Bag_No_Screen_1.original",
+      image: product53,
       price: 22,
       information: {
         linkTo: "https://aranet.com/en/pro/products/navy-blue-travel-case",
@@ -1058,7 +1132,7 @@ export const products = [
     {
       id: 54,
       title: "WET150 transmitter extension cable",
-      image: "Extention_WET150.original",
+      image: product54,
       price: 55,
       information: {
         linkTo:
@@ -1072,7 +1146,7 @@ export const products = [
     {
       id: 55,
       title: "WET150 sensor stand",
-      image: "WET150_Installation_Accessory_1.original",
+      image: product55,
       price: 8.4,
       information: {
         linkTo: "https://aranet.com/en/pro/products/aranet-wet150-sensor-stand",
@@ -1086,7 +1160,7 @@ export const products = [
     {
       id: 56,
       title: "T/RH replacement probe",
-      image: "T_RH_replacement_probe_1.1.original",
+      image: product56,
       price: 40,
       information: {
         linkTo:
@@ -1101,7 +1175,7 @@ export const products = [
     {
       id: 57,
       title: "T/RH replacement probe (ammonia resistant)",
-      image: "T_RH_ammonia_resistant_replacement_probe_1.1.original",
+      image: product57,
       price: 110,
       information: {
         linkTo:
@@ -1116,7 +1190,7 @@ export const products = [
     {
       id: 58,
       title: "T/RH probe extension cord",
-      image: "T-RH_probe_extension_cord_1_900x900-2.original",
+      image: product58,
       price: 65,
       information: {
         linkTo:
@@ -1134,7 +1208,7 @@ export const products = [
     {
       id: 59,
       title: "Aranet4 PRO / HOME Wall Mount Bracket",
-      image: "wall-mount_1-1080x1080.original",
+      image: product59,
       price: 17,
       information: {
         linkTo: "https://aranet.com/en/pro/products/wall_mount_bracket",
@@ -1145,7 +1219,7 @@ export const products = [
     {
       id: 60,
       title: "DOL 53 Ammonia sensor replacement",
-      image: "dol.53-sensor_web_4-1080x1080.original",
+      image: product60,
       price: 980,
       information: {
         linkTo:
@@ -1161,7 +1235,7 @@ export const products = [
     {
       id: 61,
       title: "Aranet4 AC Power Adapter",
-      image: "Aranet4_AC_Power_Adapter_EU_900x900.original",
+      image: product61,
       price: 25,
       information: {
         linkTo: "https://aranet.com/en/pro/products/aranet4-ac-power-adapter",
@@ -1172,7 +1246,7 @@ export const products = [
     {
       id: 62,
       title: "Aranet PRO Plus/PRO Plus LTE Base Station Mounting Foot Kit",
-      image: "Aranet_PRO_Plus_PRO_Plus_LTE_Base_Station_Moun.original",
+      image: product62,
       price: 8,
       information: {
         linkTo:
@@ -1186,7 +1260,7 @@ export const products = [
     {
       id: 63,
       title: "Aranet PRO Plus/PRO Plus LTE Base Station Pole Mounting Kit 1",
-      image: "viens_1-1080x1080.original",
+      image: product63,
       price: 45,
       information: {
         linkTo:
@@ -1201,7 +1275,7 @@ export const products = [
       id: 64,
       title:
         "Aranet PRO Plus/PRO Plus LTE Base Station Pole Mount Pole Mounting Kit 2",
-      image: "divi_1-1080x1080.original",
+      image: product64,
       price: 50,
       information: {
         linkTo:
@@ -1215,7 +1289,7 @@ export const products = [
     {
       id: 65,
       title: "WET150 sensor installation bracket",
-      image: "WET_150_stand_1.original",
+      image: product65,
       price: 30,
       information: {
         linkTo:
@@ -1230,7 +1304,7 @@ export const products = [
     {
       id: 66,
       title: "IEEE 802.3af PoE injector for Aranet PRO Plus base station",
-      image: "poe-injector_aranet_web_1-1080x1080.original",
+      image: product66,
       price: 40,
       information: {
         linkTo:
@@ -1247,7 +1321,7 @@ export const products = [
     {
       id: 67,
       title: "Modbus TCP/IP to Modbus RTU converter",
-      image: "modbus-rtu-converter_1-1-1080x1080.original",
+      image: product67,
       price: 120,
       information: {
         linkTo:
@@ -1261,7 +1335,7 @@ export const products = [
     {
       id: 68,
       title: "PoE Injector for Aranet PRO base station",
-      image: "poe-injector-for-aranet-pro-base-station-1080x.original",
+      image: product68,
       price: 5.5,
       information: {
         linkTo:
@@ -1277,7 +1351,7 @@ export const products = [
     {
       id: 69,
       title: "PoE Injector Waterproof Case",
-      image: "f6a3583-1080x1080.original",
+      image: product69,
       price: 7,
       information: {
         linkTo:
@@ -1291,7 +1365,7 @@ export const products = [
     {
       id: 70,
       title: "Differential Pressure sensor installation kit",
-      image: "Different_Kit_for_Web_page_3.original",
+      image: product70,
       price: 20,
       information: {
         linkTo:

@@ -21,5 +21,8 @@
   }
   &__logofooter {
     width: 30rem;
+    @include global.respond(phone) {
+      width: 20rem;
+    }
   }
 }
