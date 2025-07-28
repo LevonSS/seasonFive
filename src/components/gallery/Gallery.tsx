@@ -3,7 +3,6 @@ import styles from "./Gallery.module.scss";
 import { createPortal } from "react-dom";
 import { FadeInSection } from "../../animation/animation";
 import { projectsImage } from "../../data/data";
-import { _GALLERYPATH } from "../../helper/constants";
 import Modal from "../modal/Modal";
 import { useState } from "react";
 
@@ -40,7 +39,7 @@ const Gallery = () => {
                 key={item.image}
               >
                 <img
-                  src={`${_GALLERYPATH + item.image}`}
+                  src={item.image}
                   alt="Gallery image 1"
                   className={styles.img}
                   loading="lazy"
@@ -56,7 +55,7 @@ const Gallery = () => {
                 setOpenModal={setOpenModal}
                 title={projectinfo.title}
                 text={projectinfo.text}
-                image={`${_GALLERYPATH + projectinfo.image}`}
+                image={projectinfo.image}
               />,
               document.body
             )}

@@ -1,11 +1,26 @@
 import contolImg1 from "../assets/images/seasonFive/Basic.jpg";
 import contolImg2 from "../assets/images/seasonFive/Advanced.jpg";
 import contolImg3 from "../assets/images/seasonFive/BoilerRoom.png";
+
 import heating from "../assets/images/heating.png";
 import cooling from "../assets/images/cooling.png";
 import climatecontrol from "../assets/images/climatecontrol.jpg";
 import datadriven from "../assets/images/datadriven.png";
 import retrofitting from "../assets/images/retrofitting.png";
+
+import projectImage1 from "../assets/images/projects/image1.webp";
+import projectImage2 from "../assets/images/projects/image2.webp";
+import projectImage3 from "../assets/images/projects/image3.webp";
+import projectImage4 from "../assets/images/projects/image4.webp";
+import projectImage5 from "../assets/images/projects/image5.webp";
+import projectImage6 from "../assets/images/projects/image6.webp";
+import projectImage7 from "../assets/images/projects/image7.webp";
+import projectImage8 from "../assets/images/projects/image8.webp";
+import projectImage9 from "../assets/images/projects/image9.webp";
+import projectImage10 from "../assets/images/projects/image10.webp";
+import projectImage11 from "../assets/images/projects/image11.webp";
+import projectImage12 from "../assets/images/projects/image12.jpg";
+import projectImage13 from "../assets/images/projects/image13.jpg";
 
 export const packagesAndKits = [
   {
@@ -1352,67 +1367,67 @@ export const serviceTypes = [
 
 export const projectsImage = [
   {
-    image: "image1.webp",
+    image: projectImage1,
     title: "0.6 ha Roses",
     text: "Voskevaz | Heating & cooling, Season5 climate computer, data-driven growing",
   },
   {
-    image: "image2.webp",
+    image: projectImage2,
     title: "0.45 ha Roses",
     text: "Voskevaz | Season5 climate computer installed",
   },
   {
-    image: "image3.webp",
+    image: projectImage3,
     title: "0.1 ha Rose Nursery",
     text: "Voskevaz | Heating & cooling system with condensing boilers, Season5 climate computer",
   },
   {
-    image: "image4.webp",
+    image: projectImage4,
     title: "1.5 ha Roses",
     text: "Voskevaz | Heating & cooling, Season5 climate computer",
   },
   {
-    image: "image5.webp",
+    image: projectImage5,
     title: "0.13 ha Rose Nursery",
     text: "Voskevaz | Heating & cooling system, Season5 climate computer – IN PROGRESS!",
   },
   {
-    image: "image6.webp",
+    image: projectImage6,
     title: "0.25 ha Potted Flowers",
     text: "Akunk | Heating & cooling system design",
   },
   {
-    image: "image7.webp",
+    image: projectImage7,
     title: "3.2 ha Roses",
     text: "Akunk | Heating system modernization, boiler room upgrade",
   },
   {
-    image: "image8.webp",
+    image: projectImage8,
     title: "1 ha Spray Roses",
     text: "Hartavan | Heating, cooling and control system design",
   },
   {
-    image: "image9.webp",
+    image: projectImage9,
     title: "2.0 ha Spray Roses",
     text: "Hartavan | Heating system modernisation",
   },
   {
-    image: "image10.webp",
+    image: projectImage10,
     title: "3.1 ha Spray Roses",
     text: "Hartavan | Boiler room upgrade",
   },
   {
-    image: "image11.webp",
+    image: projectImage11,
     title: "0.3 ha Tomatoes",
     text: "Arzni | Heating & cooling system, data-driven growing with Aranet sensors",
   },
   {
-    image: "image12.jpg",
+    image: projectImage12,
     title: "1.0 ha Gerbera",
     text: "Marmarashen | Heating & cooling system design",
   },
   {
-    image: "image13.jpg",
+    image: projectImage13,
     title: "0.7 ha Sweet Pepper",
     text: "Parpi | Heating & cooling system design",
   },

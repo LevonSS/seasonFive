@@ -1,8 +1,4 @@
 import FadeInSectionVariants from "../../../animation/animation";
-// import { _SEASONFIVEIMAGEPATH } from "../../../helper/constants";
-// import img1 from "../../../assets/images/seasonFive/Basic.jpg";
-// import img2 from "../../../assets/images/seasonFive/Advanced.jpg";
-// import img3 from "../../../assets/images/seasonFive/BoilerRoom.png";
 import {
   yOffsetVariants,
   xOffsetVariants,
