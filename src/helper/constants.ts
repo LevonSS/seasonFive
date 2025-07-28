@@ -1,5 +1,3 @@
-export const _IMAGEPATH = "../../../src/assets/images/packagesAndKits/";
-
 export const defObj = {
   id: 0,
   image: "",

@@ -1,13 +1,16 @@
+//Control
 import contolImg1 from "../assets/images/seasonFive/Basic.jpg";
 import contolImg2 from "../assets/images/seasonFive/Advanced.jpg";
 import contolImg3 from "../assets/images/seasonFive/BoilerRoom.png";
 
+//Services
 import heating from "../assets/images/heating.png";
 import cooling from "../assets/images/cooling.png";
 import climatecontrol from "../assets/images/climatecontrol.jpg";
 import datadriven from "../assets/images/datadriven.png";
 import retrofitting from "../assets/images/retrofitting.png";
 
+//Projects
 import projectImage1 from "../assets/images/projects/image1.webp";
 import projectImage2 from "../assets/images/projects/image2.webp";
 import projectImage3 from "../assets/images/projects/image3.webp";
@@ -22,11 +25,21 @@ import projectImage11 from "../assets/images/projects/image11.webp";
 import projectImage12 from "../assets/images/projects/image12.jpg";
 import projectImage13 from "../assets/images/projects/image13.jpg";
 
+//Packages
+import package1 from "../assets/images/packagesAndKits/TDSPHP04_Plant_growth_package.original.webp";
+import package2 from "../assets/images/packagesAndKits/TDSPHP05_Biomass_gain_package.original.webp";
+import package3 from "../assets/images/packagesAndKits/TDSPHP06_Horti_research_package.original.webp";
+import package4 from "../assets/images/packagesAndKits/TDSPHP03_Irrigation_basic_package.original.webp";
+import package5 from "../assets/images/packagesAndKits/TDSPHP02_Irrigation_plus_package.original.webp";
+import package6 from "../assets/images/packagesAndKits/TDSPHP01_Irrigation_expert_package.original.webp";
+import package7 from "../assets/images/packagesAndKits/Drainage_Plus_Black_200x200px_JQZhx6H.original.webp";
+import package8 from "../assets/images/packagesAndKits/Drainage_Expert_Black_1000x1000px_KNePqsO.original.webp";
+
 export const packagesAndKits = [
   {
     id: 1,
     title: "Planth Growth Package",
-    image: "TDSPHP04_Plant_growth_package.original",
+    image: package1,
     price: 4490,
     information: {
       linkTo: "https://aranet.com/en/pro/products/aranet-plant-growth-package",
@@ -47,7 +60,7 @@ export const packagesAndKits = [
   {
     id: 2,
     title: "Biomass Gain Package",
-    image: "TDSPHP05_Biomass_gain_package.original",
+    image: package2,
     price: 2825,
     information: {
       linkTo: "https://aranet.com/en/pro/products/aranet-biomass-gain-package",
@@ -67,7 +80,7 @@ export const packagesAndKits = [
   {
     id: 3,
     title: "Horticulture Research Package",
-    image: "TDSPHP06_Horti_research_package.original",
+    image: package3,
     price: 3570,
     information: {
       linkTo:
@@ -93,7 +106,7 @@ export const packagesAndKits = [
   {
     id: 4,
     title: "Irrigation Basic Package",
-    image: "TDSPHP03_Irrigation_basic_package.original",
+    image: package4,
     price: 2795,
     information: {
       linkTo:
@@ -115,7 +128,7 @@ export const packagesAndKits = [
   {
     id: 5,
     title: "Irrigation Plus Package",
-    image: "TDSPHP02_Irrigation_plus_package.original",
+    image: package5,
     price: 2160,
     information: {
       linkTo:
@@ -134,7 +147,7 @@ export const packagesAndKits = [
   {
     id: 6,
     title: "Irrigation Expert Package",
-    image: "TDSPHP01_Irrigation_expert_package.original",
+    image: package6,
     price: 7175,
     information: {
       linkTo:
@@ -154,7 +167,7 @@ export const packagesAndKits = [
   {
     id: 7,
     title: "Drainage Plus Kit",
-    image: "Drainage_Plus_Black_200x200px_JQZhx6H.original",
+    image: package7,
     price: 3995,
     information: {
       linkTo: "https://aranet.com/en/pro/products/drainage-plus-kit",
@@ -168,7 +181,7 @@ export const packagesAndKits = [
   {
     id: 8,
     title: "Drainage Expert Kit",
-    image: "Drainage_Expert_Black_1000x1000px_KNePqsO.original",
+    image: package8,
     price: 5500,
     information: {
       linkTo: "https://aranet.com/en/pro/products/drainage-expert-kit",

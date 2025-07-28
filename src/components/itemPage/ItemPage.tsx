@@ -1,5 +1,4 @@
 import FadeInSectionVariants from "../../animation/animation";
-import { _IMAGEPATH } from "../../helper/constants";
 import {
   yOffsetVariants,
   xOffsetVariants,
@@ -34,7 +33,7 @@ const ItemPage = ({ item: { image, information, title } }: ItemProps) => {
         <div className={styles.itemPage}>
           <div className={styles.itemPage__image}>
             <motion.div variants={yOffsetVariants}>
-              <img src={`${_IMAGEPATH}${image}.webp`} alt="Image" />
+              <img src={image} alt="Image" />
             </motion.div>
           </div>
           <motion.div variants={xOffsetVariants}>

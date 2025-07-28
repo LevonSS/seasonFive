@@ -1,6 +1,5 @@
 import { Link } from "react-router";
 import styles from "./CardItem.module.scss";
-import { _IMAGEPATH } from "../../helper/constants";
 import { FadeInSection } from "../../animation/animation";
 
 export interface CardProps {
@@ -29,7 +28,7 @@ const CardItem = ({
           </div>
 
           <div className={styles.cardItem__image}>
-            <img src={`${_IMAGEPATH}${image}.webp`} />
+            <img src={image} />
           </div>
 
           <div className={styles.cardItem__button}>
