@@ -6,13 +6,14 @@ import Logo from "../logo/Logo";
 import styles from "./Footer.module.scss";
 import { useAmoForm } from "../../context/useAmoForm";
 import { handleScrollToTop } from "../../helper/scrollToTop";
+import footerLogo from "../../assets/bottomLogo.png";
 
 const Footer = () => {
   const { setIsOpenModalMailingList } = useAmoForm();
   return (
     <footer className={styles.footer}>
       <div className={styles.footer__topSection}>
-        <Logo image="bottomLogo.png" from="footer" />
+        <Logo image={footerLogo} from="footer" />
         <div className={styles.footer__topSection__social}>
           <Link to="https://www.facebook.com/season5.am/" target="_blank">
             <BsFacebook />

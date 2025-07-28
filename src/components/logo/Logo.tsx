@@ -16,7 +16,7 @@ const Logo = ({ isVisibleMobileMenu, image, from }: Props) => {
       }`}
     >
       <img
-        src={`../../src/assets/${image}`}
+        src={image}
         alt="Logo"
         className={`${
           from

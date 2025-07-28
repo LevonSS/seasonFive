@@ -28,11 +28,7 @@ const Capsule = ({ image, text, link, linkText, modifier }: Props) => {
     <div className={`${styles.capsule} ${modifier ? styles[modifier] : ""}`}>
       <Link to={link ? link : ""}>
         <div className={styles.imgBox}>
-          <img
-            className={styles.img}
-            src={`../../src/assets/images/${image}`}
-            alt="Photo"
-          />
+          <img className={styles.img} src={image} alt="Photo" />
         </div>
         <div className={styles.capsule__text}>
           <h3>{text}</h3>

@@ -1,3 +1,7 @@
+import contolImg1 from "../assets/images/seasonFive/Basic.jpg";
+import contolImg2 from "../assets/images/seasonFive/Advanced.jpg";
+import contolImg3 from "../assets/images/seasonFive/BoilerRoom.png";
+
 export const packagesAndKits = [
   {
     id: 1,
@@ -1413,8 +1417,8 @@ export const seasonFiveProducts = [
   {
     id: 999 - 3,
     title: "Season5 Basic Climate Controller",
-    image: "Basic.jpg",
-    pdf: "Basic.pdf",
+    image: contolImg1,
+    pdf: "/pdfs/Basic.pdf",
     information: {
       text: [
         "The Season5 Basic Climate Controller automates the core climate functions of a single-zone greenhouse, helping growers maintain stable temperature and humidity throughout the day with minimal manual intervention. It offers intelligent, weather-adaptive control of ventilation, heating, and cooling systems based on real-time sensor data.",
@@ -1437,8 +1441,8 @@ export const seasonFiveProducts = [
   {
     id: 999 - 1,
     title: "Season5 Advanced Climate Controller",
-    image: "Advanced.jpg",
-    pdf: "Advanced.pdf",
+    image: contolImg2,
+    pdf: "/pdfs/Advanced.pdf",
     information: {
       text: [
         "Designed for greenhouses with advanced infrastructure, this controller ensures high-precision climate management across all key systems — heating, cooling, ventilation, shading, and humidification. Works in tandem with the Season5 Boiler Controller for optimized water-based heating.",
@@ -1459,8 +1463,8 @@ export const seasonFiveProducts = [
   {
     id: 999 - 2,
     title: "Season5 Boiler Room Controller",
-    image: "BoilerRoom.png",
-    pdf: "BoilerRoom.pdf",
+    image: contolImg3,
+    pdf: "/pdfs/BoilerRoom.pdf",
     information: {
       text: [
         "Centralized controller for managing greenhouse boiler systems and distributing heat to up to three climate zones based on real-time requests from Season5 Advanced Climate Controllers.",

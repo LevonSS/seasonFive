@@ -1,5 +1,8 @@
 import FadeInSectionVariants from "../../../animation/animation";
-import { _SEASONFIVEIMAGEPATH } from "../../../helper/constants";
+// import { _SEASONFIVEIMAGEPATH } from "../../../helper/constants";
+// import img1 from "../../../assets/images/seasonFive/Basic.jpg";
+// import img2 from "../../../assets/images/seasonFive/Advanced.jpg";
+// import img3 from "../../../assets/images/seasonFive/BoilerRoom.png";
 import {
   yOffsetVariants,
   xOffsetVariants,
@@ -28,12 +31,13 @@ export interface ItemProps {
 const ItemPage = ({ item: { image, pdf, information, title } }: ItemProps) => {
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = `/pdfs/${pdf}`;
+    link.href = `${pdf}`;
     link.download = pdf;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   };
+  console.log(image);
   return (
     <>
       <FadeInSectionVariants variants={containerVariants}>
@@ -41,7 +45,7 @@ const ItemPage = ({ item: { image, pdf, information, title } }: ItemProps) => {
         <div className={styles.itemPage}>
           <div className={styles.image}>
             <motion.div variants={yOffsetVariants}>
-              <img src={`${_SEASONFIVEIMAGEPATH}${image}`} alt="Image" />
+              <img src={`${image}`} alt="Image" />
             </motion.div>
           </div>
           <motion.div variants={xOffsetVariants}>

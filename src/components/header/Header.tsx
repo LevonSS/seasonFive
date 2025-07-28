@@ -2,6 +2,7 @@ import Logo from "../logo/Logo";
 import HeaderMenu from "./headerMenu/HeaderMenu";
 import styles from "./Header.module.scss";
 import { useEffect, useState } from "react";
+import logo from "../../assets/Logo.png";
 
 type ContactProps = {
   onContactOpen: () => void;
@@ -36,7 +37,7 @@ const Header = ({ onContactOpen }: ContactProps) => {
         }`}
         onClick={() => setShowMobileMenu(false)}
       ></div>
-      <Logo isVisibleMobileMenu={isVisibleMobileMenu} image="Logo.png" />
+      <Logo isVisibleMobileMenu={isVisibleMobileMenu} image={logo} />
       <HeaderMenu
         isHidden={isMenuHidden}
         onShowMobileMenu={setShowMobileMenu}

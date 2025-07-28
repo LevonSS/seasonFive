@@ -1,6 +1,7 @@
 import { Link } from "react-router";
 import styles from "./Salmon.module.scss";
 import { FadeInSection } from "../../animation/animation";
+import mission from "../../assets/images/mission.jpg";
 
 const Salmon = () => {
   return (
@@ -28,7 +29,7 @@ const Salmon = () => {
           </FadeInSection>
         </div>
         <div className={styles.salmon__image}>
-          <img src="../../src/assets/images/mission.jpg" alt="Photo" />
+          <img src={mission} alt="Photo" />
         </div>
       </div>
     </FadeInSection>

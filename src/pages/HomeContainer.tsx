@@ -4,6 +4,8 @@ import Capsule from "../components/capsule/Capsule";
 import HomePageHeadline from "../components/homepageHeadline/HomePageHeadline";
 import Salmon from "../components/salmon/Salmon";
 import Section from "../components/section/Section";
+import ourprojects from "../assets/images/ourprojects.jpg";
+import ourservices from "../assets/images/ourservices.jpg";
 
 const SectionContainer = () => {
   return (
@@ -15,7 +17,7 @@ const SectionContainer = () => {
         <FadeInSection>
           <Capsule
             modifier="home"
-            image="photo2.jpg"
+            image={ourservices}
             text="Our Services"
             linkText="Learn More"
             link="/services"
@@ -24,7 +26,7 @@ const SectionContainer = () => {
         <FadeInSection delay={0.3}>
           <Capsule
             modifier="home"
-            image="ourprojects.jpg"
+            image={ourprojects}
             text="Our Projects"
             linkText="Learn More"
             link="/projects"
