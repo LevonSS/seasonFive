@@ -1194,8 +1194,8 @@ export const products = [
       price: 65,
       information: {
         linkTo:
-          "https://aranet.com/en/pro/products/Aranet-TRH-probe-extension-cord-10-m",
-        productCode: "TDACT009.100",
+          "https://aranet.com/en/pro/products/Aranet-TRH-probe-extension-cord-1-m",
+        productCode: "TDACT009.010",
         text: [
           "Aranet T/RH probe extension cord available in:",
           "10 m",
